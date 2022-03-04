@@ -10,8 +10,8 @@ profile:
   
 
 news: true  # includes a list of news items
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true  # includes social icons at the bottom of the page
+selected_papers: false # includes a list of papers marked as "selected={true}"
+social: False  # includes social icons at the bottom of the page
 ---
 I am a Ph.D. student at the university of Washington advised by [Dieter Fox](https://homes.cs.washington.edu/~fox/) and [Abhishek Gupta](https://abhishekunique.github.io/). 
 My research interests are robot manipulation, computer vision and machine learning. These days, I'm particularly interested 

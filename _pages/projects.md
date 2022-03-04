@@ -2,7 +2,7 @@
 layout: page
 title: projects
 permalink: /projects/
-description: A growing collection of your cool projects.
+description: Not all the projects are completed with success. I'm grateful for all the skills and lessons learned on failed ones too!
 nav: true
 display_categories: [work, fun]
 horizontal: false
