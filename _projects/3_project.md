@@ -21,7 +21,7 @@ simulator, in order to close the gap between sim to real.
 <div class="caption">
     Left: Different approaches are investigated in this project. (1) domain randomization (2) Generated kitchen example using GauGAN (3) making synthetic images more realistic inside a simulator (4) inject only a small amount of real world data. 
 </div>
-While project is not complete yet, many interesting observations deserve further investigation. 
+Many interesting observations deserve further investigation: 
 
 (a) Our goal is that given an image with semantic masks, we can use GAN to "fill" textures so that it will look realistic.
  We found that GAN couldn't generate very great images with fine details with the scales of the current dataset. We train GaoGAN on ADE20K dataset. Because the training samples are not huge, the network couldn't effectively learn
@@ -29,7 +29,7 @@ expressive features that lead to good reconstructed images.
 
 (b) We evaluated different data types on real images. We found that by injecting even only 1% of the real images could improve detection results by 10%
 
-(c) ...
+(c) how can we use domain randomization, GAN images, sim images, and a little real images, train a network that could better at sim to real transfer. 
 
 
 More details are coming soon!
