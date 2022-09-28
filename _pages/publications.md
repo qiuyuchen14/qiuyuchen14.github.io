@@ -7,22 +7,32 @@ years: [2022, 2017, 2014, 2013]
 nav: true
 ---
 
-<!-- _pages/publications.md -->
+[//]: # (<!-- _pages/publications.md -->)
 
-<div class="publications">
+[//]: # ()
+[//]: # (<div class="publications">)
 
+[//]: # ()
+[//]: # ()
+[//]: # ({%- for y in page.years %})
 
-{%- for y in page.years %}
+[//]: # ()
+[//]: # (  <h2 class="year">{{y}}</h2>)
 
-  <h2 class="year">{{y}}</h2>
+[//]: # ()
+[//]: # (  {% bibliography -f papers -q @*[year={{y}}]* %})
 
-  {% bibliography -f papers -q @*[year={{y}}]* %}
+[//]: # ()
+[//]: # ({% endfor %})
 
-{% endfor %}
+[//]: # ()
+[//]: # ()
+[//]: # (</div>)
+![](assets/img/isagrasp.gif)
+function nerfsuper\_start() { document.getElementById('nerfsuper\_image').style.opacity = "1"; } function nerfsuper\_stop() { document.getElementById('nerfsuper\_image').style.opacity = "0"; } nerfsuper\_stop() [Learning Robust Real-World Dexterous Grasping Policies via Implicit Shape Augmentation](https://sites.google.com/view/implicitaugmentation/home)  
+[**Zoey Qiuyu Chen**](https://qiuyuchen14.github.io/), [Karl Van Wyk](https://research.nvidia.com/person/karl-van-wyk/), [Yu-Wei Chao](https://research.nvidia.com/person/yu-wei-chao),  [Wei Yang](http://wyang.me/),  [Arsalan Mousavian](https://cs.gmu.edu/~amousavi/),  [Abhishek Gupta](https://abhishekunique.github.io/),  [Dieter Fox](https://homes.cs.washington.edu/~fox/)
+_CoRL_, 2022  
+[project page](https://sites.google.com/view/implicitaugmentation/home) / arXiv 
 
+Implicit shape augmentation make generalization better. 
 
-</div>
-
-
-
-[//]: # ([Email]&#40;qiuyuchen14@gmail.com&#41; / [Twitter]&#40;https://twitter.com/ZoeyC17&#41; / [Github]&#40;https://github.com/qiuyuchen14&#41; / [GoogleScholar]&#40;https://scholar.google.com/citations?user=ZT8ib-AAAAAJ&hl=en&#41;)
