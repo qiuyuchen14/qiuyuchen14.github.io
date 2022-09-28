@@ -19,4 +19,6 @@ learning to generate diverse data for robots such that learning from minimal dem
 from Electrical Engineering Department at the Unviersity of Washington advised by [Jenq-Neng Hwang](https://people.ece.uw.edu/hwang/) and [Imari Sato](http://research.nii.ac.jp/~imarik/). I am also fortunate to have interned with many awesome mentors in the past at
 National Institute of Informatics (Tokyo), Microsoft Research (Redmond), NNAISENSE (Lugano), Nvidia Robotics Lab (Seattle) and Meta robotics lab (Pittsburgh). See full [CV](assets/pdf/resume_zoeyC.pdf). 
 
-[Twitter](https://twitter.com/ZoeyC17), [Github](https://github.com/qiuyuchen14), [LinkedIn](https://www.linkedin.com/in/qiuyu-chen), [G.scholar](https://scholar.google.com/citations?user=ZT8ib-AAAAAJ&hl=en)
+[Email](qiuyuchen14@gmail.com) / [Twitter](https://twitter.com/ZoeyC17) / [Github](https://github.com/qiuyuchen14) / [G.scholar](https://scholar.google.com/citations?user=ZT8ib-AAAAAJ&hl=en) #
+
+[//]: # ([LinkedIn]&#40;https://www.linkedin.com/in/qiuyu-chen&#41; / )
