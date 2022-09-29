@@ -31,4 +31,4 @@ generalize well on unseen object poses in both simulation and the real world.
     Left: Human demonstrations. Middle: Policy on unseen poses. Right: Policy deployed on a robot. 
 </div>
 
-Details are coming soon!
+check out our [website](https://sites.google.com/view/dextransfer/home) and [paper](https://arxiv.org/abs/2209.14284)
