@@ -20,3 +20,12 @@ correspondence-aware generative model to extrapolate the retargeted demonstratio
 objects. We use this dataset to train a single grasping policy that is able to generalize to a variety of unseen
 objects in simulation and real world.
 </div>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/isagrasp.gif" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    ISAGrasp significantly improve the generalization ability to unseen objects. We evaluated our policy on 22 unseen objects in real world and achieve 79% success rate.
+</div>
