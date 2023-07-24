@@ -22,5 +22,6 @@ from Electrical Engineering Department at the Unviersity of Washington advised b
 National Institute of Informatics (Tokyo), Microsoft Research (Redmond), NNAISENSE (Lugano), Nvidia Robotics Lab (Seattle) and Meta robotics lab (Pittsburgh). 
 
 In my spare time, I enjoy playing the piano, painting, movies, cooking, hiking, board games, and recently snorkeling :) 
+
 [Email](mailto:qiuyuchen14@gmail.com)   /  [CV](assets/pdf/resume_zoeyC.pdf)  /  [Twitter](https://twitter.com/ZoeyC17)  /  [Github](https://github.com/qiuyuchen14)  /  [Google Scholar](https://scholar.google.com/citations?user=ZT8ib-AAAAAJ&hl=en)
 
