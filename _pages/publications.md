@@ -6,6 +6,20 @@ permalink: /publications/
 <img align="left" width="170" height="170" src="https://github.com/qiuyuchen14/qiuyuchen14.github.io/blob/master/assets/img/isagrasp.gif">
 
 
+
+[**GenAug: Retargeting behaviors to unseen situations via Generative Augmentation**](https://genaug.github.io/)
+
+
+[**Zoey Qiuyu Chen**](https://qiuyuchen14.github.io/), [Sho Kiami](https://www.linkedin.com/in/shokiami),  [Abhishek Gupta](https://abhishekunique.github.io/),  
+
+[Vikash Kumar](https://vikashplus.github.io/index.html),  RSS, 2023.  (Best System Paper Nomination!)
+
+
+[project page](https://genaug.github.io/) / [paper](https://arxiv.org/abs/2302.06671) / [code](https://arxiv.org/abs/2302.06671)
+
+
+
+
 [**Learning Robust Real-World Dexterous Grasping Policies via Implicit Shape Augmentation**](https://sites.google.com/view/implicitaugmentation/home)
 
 
@@ -18,7 +32,7 @@ permalink: /publications/
 [Dieter Fox](https://homes.cs.washington.edu/~fox/),  CoRL, 2022.  
 
 
-[project page](https://sites.google.com/view/implicitaugmentation/home) / arXiv (coming soon!)
+[project page](https://sites.google.com/view/implicitaugmentation/home) / [paper](https://arxiv.org/abs/2210.13638) 
 
 
 
@@ -37,7 +51,7 @@ permalink: /publications/
 [Dieter Fox](https://homes.cs.washington.edu/~fox/), RSS IL workshop (<font color='red'> **(Spotlight)**  </font>), 2022.
 
 
-[project page](https://sites.google.com/view/implicitaugmentation/home) / arXiv 
+[project page](https://sites.google.com/view/dextransfer/home) / [paper](https://arxiv.org/abs/2210.13638) 
 
 
 
