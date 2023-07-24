@@ -1,48 +1,15 @@
----
----
-@article{ISAGrasp,
-  title={Learning Robust Real-World Dexterous Grasping Policies via Implicit Shape Augmentation},
-  author={Zoey Qiuyu Chen,  Karl Van Wyk,  Yu-Wei Chao,  Wei Yang,  Arsalan Mousavian,  Abhishek Gupta and Dieter Fox},
-  journal={Conference on Robot Learning (CoRL)},
-  volume={ },
-  pages={ },
-  year={2022},
-  publisher={},
-}
+% Encoding: UTF-8
 
-@article{DexTransfer,
-  title={DexTransfer: Real World Multi-fingered Dexterous Grasping with Minimal Human Demonstrations},
-  author={Zoey Qiuyu Chen,  Karl Van Wyk,  Yu-Wei Chao,  Wei Yang,  Arsalan Mousavian,  Abhishek Gupta and Dieter Fox},
-  journal={Overlooked Aspects of Imitation Learning workshop at Robotics Science and Systems (RSS)},
-  volume={ },
-  pages={ },
-  year={2022},
-  publisher={},
-}
-@article{chen2017virtual,
-  title={Virtual blood vessels in complex background using stereo x-ray images},
-  author={Chen, Qiuyu and Bise, Ryoma and Gu, Lin and Zheng, Yinqiang and Sato, Imari and Hwang, Jenq-Neng and Imanishi, Nobuaki and Aiso, Sadakazu},
-  journal={Proceedings of the IEEE International Conference on Computer Vision Workshops},
-  pages={99--106},
-  year={2017},
-  publisher={IEEE,}
-}
-@article{chen2014design,
-  title={The design and simulation of p-type Si/SiGe Terahertz quantum cascade lasers},
-  author={Chen, Qiuyu and Wu, Jingjin and Fang, Zhou and Zhao, Ce Zhou},
-  journal={Optics \& Laser Technology},
-  volume={57},
-  pages={104--109},
-  year={2014},
-  publisher={Elsevier}
-}
-@article{fang2013review,
-  title={A review of recent progress in lasers on silicon},
-  author={Fang, Zhou and Chen, Qiu Yu and Zhao, Ce Zhou},
-  journal={Optics \& Laser Technology},
-  volume={46},
-  pages={103--110},
-  year={2013},
-  publisher={Elsevier}
-}
 
+@InProceedings{chen2023genaug,
+  author    = {Chen, Zoey and Kiami, Sho and Gupta, Abhishek and Kumar, Vikash},
+  booktitle = {Robotics: Science and Systems (RSS)},
+  title     = {Genaug: Retargeting behaviors to unseen situations via generative augmentation},
+  year      = {2023},
+  abstract  = {Robot learning methods have the potential for widespread generalization across tasks, environments, and objects. However, these methods require large diverse datasets that are expensive to collect in real-world robotics settings. For robot learning to generalize, we must be able to leverage sources of data or priors beyond the robot’s own experience. In this work, we posit that image-text generative models, which are pre-trained on large corpora of web-scraped data, can serve as such a data source. We show that despite these generative models being trained on largely non-robotics data, they can serve as effective ways to impart priors into the process of robot learning in a way that enables widespread generalization. In particular, we show how pre-trained generative models can serve as effective tools for semantically meaningful data augmentation. By leveraging these pre-trained models for generating appropriate “semantic” data augmentations, we propose a system GenAug that is able to significantly improve policy generalization. We apply GenAug to tabletop manipulation tasks, showing the ability to re-target behavior to novel scenarios, while only requiring marginal amounts of real-world data. },
+  url       = {https://genaug.github.io/},
+
+  paper       = {https://arxiv.org/abs/2302.06671},
+  bibtex_show = false,
+  preview={genaug.gif}
+}
