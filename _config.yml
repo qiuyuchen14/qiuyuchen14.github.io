@@ -6,17 +6,15 @@ title: blank # the website title (if blank, full name will be used instead)
 first_name: Zoey
 middle_name:
 last_name: Chen
-email: qiuyuc@cs.washington.edu
+email: qiuyuchen14@gmail.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Zoey's website.
 footer_text: >
-  Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
-  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-  Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
-keywords: jekyll, jekyll-theme, academic-website, portfolio-website  # add your own keywords or leave empty
+
+keywords:   # add your own keywords or leave empty
 
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: ⚛️  # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: /assets/img/zoey.JPG # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://qiuyuchen14.github.io # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/
@@ -74,7 +72,7 @@ stackoverflow_id: #your stackoverflow id
 
 contact_note: >
 
-google_analytics:  # your google-analytics ID (format: UA-XXXXXXXXX)
+google_analytics:  G-7T85FW0C7L # your google-analytics ID (format: UA-XXXXXXXXX)
 google_site_verification:  # your google-site-verification ID (Google Search Console)
 bing_site_verification:  # out your bing-site-verification ID (Bing Webmaster)
 panelbear_analytics:  # panelbear analytics site ID (format: XXXXXXXXX)
