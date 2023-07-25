@@ -4,12 +4,9 @@ permalink: /publications/
 title: Publications
 description: 
 sections:
-  - bibquery: "@article"
-    text: "Journal articles"
   - bibquery: "@inproceedings"
     text: "Conference and workshop papers"
-  - bibquery: "@misc|@phdthesis|@mastersthesis"
-    text: "Thesis"
+
 years: [2023, 2022]
 social: true
 nav: true
