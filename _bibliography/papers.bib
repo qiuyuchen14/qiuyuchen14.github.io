@@ -1,6 +1,3 @@
-% Encoding: UTF-8
-
-
 @InProceedings{chen2023genaug,
   author    = {Chen, Zoey and Kiami, Sho and Gupta, Abhishek and Kumar, Vikash},
   booktitle = {Robotics: Science and Systems (RSS)},
@@ -8,49 +5,19 @@
   year      = {2023},
   abstract  = {Robot learning methods have the potential for widespread generalization across tasks, environments, and objects. However, these methods require large diverse datasets that are expensive to collect in real-world robotics settings. For robot learning to generalize, we must be able to leverage sources of data or priors beyond the robot’s own experience. In this work, we posit that image-text generative models, which are pre-trained on large corpora of web-scraped data, can serve as such a data source. We show that despite these generative models being trained on largely non-robotics data, they can serve as effective ways to impart priors into the process of robot learning in a way that enables widespread generalization. In particular, we show how pre-trained generative models can serve as effective tools for semantically meaningful data augmentation. By leveraging these pre-trained models for generating appropriate “semantic” data augmentations, we propose a system GenAug that is able to significantly improve policy generalization. We apply GenAug to tabletop manipulation tasks, showing the ability to re-target behavior to novel scenarios, while only requiring marginal amounts of real-world data. },
   website       = {https://genaug.github.io/},
+  code = {https://github.com/genaug/genaug},
+  poster = {/assets/pdf/genaug.pdf},
   paper       = {2302.06671},
   bibtex_show = false,
+  slides = {https://docs.google.com/presentation/d/1KJ4A6PI7hMb-ZbmH_dzrN8ORLRzIye8SOqVUM3ST8as/edit?usp=sharing},
   selected={true},
+  note={Best System Paper Nomination},
   preview={genaug.gif}
-}
-
-@InProceedings{chen2022learning,
-  author    = {Chen, Zoey Qiuyu and Van Wyk, Karl and Chao, Yu-Wei and Yang, Wei and Mousavian, Arsalan and Gupta, Abhishek and Fox, Dieter},
-  booktitle = {Conference on Robot Learning (CoRL)},
-  title     = {Learning robust real-world dexterous grasping policies via implicit shape augmentation},
-  year      = {2022},
-  abstract  = {Dexterous robotic hands have the capability to interact with a wide
-variety of household objects to perform tasks like grasping. However, learning robust real world grasping policies for arbitrary objects has proven challenging due
-to the difficulty of generating high quality training data. In this work, we propose
-a learning system (ISAGrasp) for leveraging a small number of human demonstrations to bootstrap the generation of a much larger dataset containing successful
-grasps on a variety of novel objects. Our key insight is to use a correspondenceaware implicit generative model to deform object meshes and demonstrated human grasps in order to generate a diverse dataset of novel objects and successful
-grasps for supervised learning, while maintaining semantic realism. We use this
-dataset to train a robust grasping policy in simulation which can be deployed in
-the real world. },
-  website       = {https://sites.google.com/view/implicitaugmentation/home},
-
-  paper       = {2210.13638},
-  bibtex_show = false,
-  selected={true},
-  preview={isagrasp.gif}
-}
-
-@InProceedings{chen2022learning,
-  author    = {Chen, Zoey Qiuyu and Van Wyk, Karl and Chao, Yu-Wei and Yang, Wei and Mousavian, Arsalan and Gupta, Abhishek and Fox, Dieter},
-  booktitle = {Robotics: Science and Systems (RSS) workshop},
-  title     = {DexTransfer: Real World Multi-fingered Dexterous Grasping with Minimal Human Demonstrations},
-  year      = {2022},
-  abstract = {Teaching a multi-fingered dexterous robot to grasp objects in the real world has been a challenging problem due to its high dimensional state and action space. We propose a robot-learning system that can take a small number of human demonstrations and learn to grasp unseen object poses given partially occluded observations. Our system leverages a small motion capture dataset and generates a large dataset with diverse and successful trajectories for a multi-fingered robot gripper. By adding domain randomization, we show that our dataset provides robust grasping trajectories that can be transferred to a policy learner. We train a dexterous grasping policy that takes the point clouds of the object as input and predicts continuous actions to grasp objects from different initial robot states. We evaluate the effectiveness of our system on a 22-DoF floating Allegro Hand in simulation and a 23-DoF Allegro robot hand with a KUKA arm in the real world. The policy learned from our dataset can generalize well on unseen object poses in both simulation and the real world.},
-  website       = {https://sites.google.com/view/dextransfer/home},
-  paper       = {2209.14284},
-  bibtex_show = false,
-  selected={false},
-  preview={dextransfer.png}
 }
 
 @InProceedings{meng2023terrainnet,
   title= {TerrainNet: Visual Modeling of Complex Terrain for High-speed, Off-road Navigation},
-  author= {Meng, Xiangyun and Hatch, Nathan and Lambert, Alexander and Li, Anqi and Wagener, Nolan and Schmittle, Matthew and Lee, JoonHo and Yuan, Wentao and Chen, Zoey and Deng, Samuel and others},
+  author= {Meng, Xiangyun and Hatch, Nathan and Lambert, Alexander and Li, Anqi and Wagener, Nolan and Schmittle, Matthew and Lee, JoonHo and Yuan, Wentao and Chen, Zoey and Deng, Samuel and Okopal, Greg and Fox, Dieter and Boots, Byron and AShaban, mirreza},
   booktitle = {Robotics: Science and Systems (RSS)},
   year      = {2023},
     abstract={Effective use of camera-based vision systems is
@@ -69,9 +36,42 @@ RGB and stereo inputs. Requirements for real-time performance
 and fast inference speeds are met using efficient, learned image
 feature projections. },
   website       = {https://sites.google.com/view/visual-terrain-modeling},
-
   paper       = {2303.15771},
   bibtex_show = false,
   selected={false},
   preview={racer.jpg}
+}
+
+@InProceedings{chen2022learning,
+  author    = {Chen, Zoey Qiuyu and Van Wyk, Karl and Chao, Yu-Wei and Yang, Wei and Mousavian, Arsalan and Gupta, Abhishek and Fox, Dieter},
+  booktitle = {Conference on Robot Learning (CoRL)},
+  title     = {Learning robust real-world dexterous grasping policies via implicit shape augmentation},
+  year      = {2022},
+  abstract  = {Dexterous robotic hands have the capability to interact with a wide
+variety of household objects to perform tasks like grasping. However, learning robust real world grasping policies for arbitrary objects has proven challenging due
+to the difficulty of generating high quality training data. In this work, we propose
+a learning system (ISAGrasp) for leveraging a small number of human demonstrations to bootstrap the generation of a much larger dataset containing successful
+grasps on a variety of novel objects. Our key insight is to use a correspondenceaware implicit generative model to deform object meshes and demonstrated human grasps in order to generate a diverse dataset of novel objects and successful
+grasps for supervised learning, while maintaining semantic realism. We use this
+dataset to train a robust grasping policy in simulation which can be deployed in
+the real world. },
+  website       = {https://sites.google.com/view/implicitaugmentation/home},
+  paper       = {2210.13638},
+  bibtex_show = false,
+  selected={true},
+  preview={isagrasp.gif}
+}
+
+@InProceedings{chen2022learning,
+  author    = {Chen, Zoey Qiuyu and Van Wyk, Karl and Chao, Yu-Wei and Yang, Wei and Mousavian, Arsalan and Gupta, Abhishek and Fox, Dieter},
+  booktitle = {Robotics: Science and Systems (RSS) workshop},
+  title     = {DexTransfer: Real World Multi-fingered Dexterous Grasping with Minimal Human Demonstrations},
+  year      = {2022},
+  abstract = {Teaching a multi-fingered dexterous robot to grasp objects in the real world has been a challenging problem due to its high dimensional state and action space. We propose a robot-learning system that can take a small number of human demonstrations and learn to grasp unseen object poses given partially occluded observations. Our system leverages a small motion capture dataset and generates a large dataset with diverse and successful trajectories for a multi-fingered robot gripper. By adding domain randomization, we show that our dataset provides robust grasping trajectories that can be transferred to a policy learner. We train a dexterous grasping policy that takes the point clouds of the object as input and predicts continuous actions to grasp objects from different initial robot states. We evaluate the effectiveness of our system on a 22-DoF floating Allegro Hand in simulation and a 23-DoF Allegro robot hand with a KUKA arm in the real world. The policy learned from our dataset can generalize well on unseen object poses in both simulation and the real world.},
+  website       = {https://sites.google.com/view/dextransfer/home},
+  paper       = {2209.14284},
+  bibtex_show = false,
+  selected={false},
+  note={Spotlight}
+  preview={dextransfer.png}
 }
