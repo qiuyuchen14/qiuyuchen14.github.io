@@ -5,7 +5,7 @@ permalink: /
 
 profile:
   align: right
-  image: zoey.JPG
+  image: zoey.jpg
   image_cicular: true # crops the image to make it circular
 
 
