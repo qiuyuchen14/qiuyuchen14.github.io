@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2023-07-23 15:59:00-0400
+date: 2023-04-1 15:59:00-0400
 inline: true
 ---
 
-[GenAug](https://genaug.github.io/) got accepted to RSS 2023 and nominated as best system paper!
+I'm TAing for [Robotics](https://courses.cs.washington.edu/courses/csep590a/23sp/) class at the University of Washington this quarter! 

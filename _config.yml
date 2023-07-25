@@ -111,7 +111,7 @@ collections:
   publications:
     output: true
     permalink: /publications/:path/
-news_limit: 3
+news_limit: 4
 
 # -----------------------------------------------------------------------------
 # Jekyll settings
