@@ -1,10 +1,10 @@
 
           <div class="invited_talks">
-            <h2>news</h2>
-            {% if site.news != blank -%}
+            <h2>Invited_talks</h2>
+            {% if site.invited_talks != blank -%}
             <div class="table-responsive">
               <table class="table table-sm table-borderless">
-              {%- assign news = site.news | reverse -%}
+              {%- assign news = site.invited_talks | reverse -%}
               {% for item in news limit: site.news_limit %}
                 <tr>
                   <th scope="row">{{ item.date | date: "%b %-d, %Y" }}</th>
