@@ -109,6 +109,11 @@ collections:
   publications:
     output: true
     permalink: /publications/:path/
+  incited_talks:
+    defaults:
+      layout: post
+    output: true
+    permalink: /invited_talks/:path/
 news_limit: 3
 
 # -----------------------------------------------------------------------------
