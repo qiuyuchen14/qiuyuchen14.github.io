@@ -1,7 +1,7 @@
 
           <div class="invited_talks">
             <h2>Invited_talks</h2>
-            {% if site.invited_talks != blank -%}
+<!--            {% if site.invited_talks != blank -%}-->
             <div class="table-responsive">
               <table class="table table-sm table-borderless">
               {%- assign news = site.invited_talks | reverse -%}
@@ -19,7 +19,7 @@
               {%- endfor %}
               </table>
             </div>
-          {%- else -%}
+<!--          {%- else -%}-->
             <p>No talks so far...</p>
-          {%- endif %}
+<!--          {%- endif %}-->
           </div>
