@@ -1,14 +1,27 @@
 @InProceedings{chen2023urdformer,
-  author    = {Chen, Zoey and Memmel, Marius and Fang, Alex and Walsman, Aaron and Fox, Dieter and Gupta, Abhishek},
-  booktitle = {Preprint},
+  author    = {Chen, Zoey and Walsman, Aaron and Memmel, Marius and Mo, Kaichun and Fang, Alex  and  Vemuri, Karthikeya and Wu, Alan and Fox, Dieter and Gupta, Abhishek},
+  booktitle = {Robotics: Science and Systems (RSS)},
   title     = {URDFormer: Constructing Interactive Realistic Scenes from Real Images via Simulation and Generative Modeling},
-  year      = {2023},
+  year      = {2024},
   abstract  = {Constructing accurate and targeted simulation scenes that are both visually and physically realistic is a significant practical interest in domains ranging from robotics to computer vision. However, this process is typically done largely by hand - a graphic designer and a simulation engineer work together with predefined assets to construct rich scenes with realistic dynamic and kinematic properties. While this may scale to small numbers of scenes, to achieve the generalization properties that are requisite of data-driven machine learning algorithms, we require a pipeline that is able to synthesize large numbers of realistic scenes, complete with “natural” kinematic and dynamic structure. To do so, we develop models for inferring structure and generating simulation scenes from natural images, allowing for scalable scene generation from web-scale datasets. To train these image-to-simulation models, we show how effective generative models can be used in generating training data, the network can be inverted to map from realistic images back to complete scene models. We show how this paradigm allows us to build large datasets of scenes with semantic and physical realism, enabling a variety of downstream applications in robotics and computer vision. },
-  website       = {https://sites.google.com/view/urdformer/home},
+  website       = {https://urdformer.github.io},
   selected={true},
+  paper       = {2302.06671},
+  abbr      = {RSS},
   note={Oral Presentation at CoRL TGR workshop},
-  preview={/assets/img/publication_preview/urdformer.gif}
+  preview={/assets/img/publication_preview/rss_urdformer.gif}
 }
+@InProceedings{khazatsky2024droid,
+    title   = {DROID: A Large-Scale In-The-Wild Robot Manipulation Dataset},
+    author  = {Alexander Khazatsky and Karl Pertsch and Suraj Nair and Ashwin Balakrishna and Sudeep Dasari and Siddharth Karamcheti and Soroush Nasiriany and Mohan Kumar Srirama and Lawrence Yunliang Chen and Kirsty Ellis and Peter David Fagan and Joey Hejna and Masha Itkina and Marion Lepert and Yecheng Jason Ma and Patrick Tree Miller and Jimmy Wu and Suneel Belkhale and Shivin Dass and Huy Ha and Arhan Jain and Abraham Lee and Youngwoon Lee and Marius Memmel and Sungjae Park and Ilija Radosavovic and Kaiyuan Wang and Albert Zhan and Kevin Black and Cheng Chi and Kyle Beltran Hatch and Shan Lin and Jingpei Lu and Jean Mercat and Abdul Rehman and Pannag R Sanketi and Archit Sharma and Cody Simpson and Quan Vuong and Homer Rich Walke and Blake Wulfe and Ted Xiao and Jonathan Heewon Yang and Arefeh Yavary and Tony Z. Zhao and Christopher Agia and Rohan Baijal and Mateo Guaman Castro and Daphne Chen and Qiuyu Chen and Trinity Chung and Jaimyn Drake and Ethan Paul Foster and Jensen Gao and David Antonio Herrera and Minho Heo and Kyle Hsu and Jiaheng Hu and Donovon Jackson and Charlotte Le and Yunshuang Li and Kevin Lin and Roy Lin and Zehan Ma and Abhiram Maddukuri and Suvir Mirchandani and Daniel Morton and Tony Nguyen and Abigail O'Neill and Rosario Scalise and Derick Seale and Victor Son and Stephen Tian and Emi Tran and Andrew E. Wang and Yilin Wu and Annie Xie and Jingyun Yang and Patrick Yin and Yunchu Zhang and Osbert Bastani and Glen Berseth and Jeannette Bohg and Ken Goldberg and Abhinav Gupta and Abhishek Gupta and Dinesh Jayaraman and Joseph J Lim and Jitendra Malik and Roberto Martín-Martín and Subramanian Ramamoorthy and Dorsa Sadigh and Shuran Song and Jiajun Wu and Michael C. Yip and Yuke Zhu and Thomas Kollar and Sergey Levine and Chelsea Finn},
+    booktitle = {Robotics: Science and Systems (RSS)},
+    website       = {https://droid-dataset.github.io/},
+    abstract  = {The creation of large, diverse, high-quality robot manipulation datasets is an important stepping stone on the path toward more capable and robust robotic manipulation policies. However, creating such datasets is challenging: collecting robot manipulation data in diverse environments poses logistical and safety challenges and requires substantial investments in hardware and human labour. As a result, even the most general robot manipulation policies today are mostly trained on data collected in a small number of environments with limited scene and task diversity. In this work, we introduce DROID (Distributed Robot Interaction Dataset), a diverse robot manipulation dataset with 76k demonstration trajectories or 350h of interaction data, collected across 564 scenes and 86 tasks by 50 data collectors in North America, Asia, and Europe over the course of 12 months. We demonstrate that training with DROID leads to policies with higher performance, greater robustness, and improved generalization ability. We open source the full dataset, code for policy training, and a detailed guide for reproducing our robot hardware setup.}
+    abbr      = {RSS},
+    year    = {2024},
+    preview={/assets/img/publication_preview/droid.png}
+}
+
 @InProceedings{chen2023genaug,
   author    = {Chen, Zoey and Kiami, Sho and Gupta, Abhishek and Kumar, Vikash},
   booktitle = {Robotics: Science and Systems (RSS)},
