@@ -17,7 +17,7 @@ group :jekyll_plugins do
     gem 'jemoji'
     gem 'unicode_utils'
     gem 'net-http', '0.3.2'
-    gem 'uri', '0.10.0'
+    gem 'uri', '0.10.1'
     gem 'webrick'
     gem 'htmlcompressor'
     gem 'htmlbeautifier'
