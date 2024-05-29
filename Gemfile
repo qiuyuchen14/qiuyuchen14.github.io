@@ -16,6 +16,7 @@ group :jekyll_plugins do
     gem 'jekyll-twitter-plugin'
     gem 'jemoji'
     gem 'unicode_utils'
+    gem 'uri', '0.13.0'
     gem 'webrick'
     gem 'htmlcompressor'
     gem 'htmlbeautifier'
