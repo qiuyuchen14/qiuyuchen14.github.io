@@ -124,7 +124,11 @@
             <a class="abstract btn btn-sm z-depth-0" role="button">Abstract</a>
           {%- endif %}
           {%- if entry.paper %}
+            {% if entry.paper contains '://' -%}
+            <a href="{{ entry.paper }}" class="btn btn-sm z-depth-0" role="button">Paper</a>
+            {%- else -%}
             <a href="http://arxiv.org/abs/{{ entry.paper }}" class="btn btn-sm z-depth-0" role="button">Paper</a>
+            {%- endif %}
           {%- endif %}
 
           {%- if entry.html %}
