@@ -81,8 +81,8 @@ panelbear_analytics:  # panelbear analytics site ID (format: XXXXXXXXX)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: The Robotist's Notebook  # your blog must have a name for it to show up in the nav bar
-blog_description: Quick random thoughts about robots and life
+blog_name: Sunday Notes  # your blog must have a name for it to show up in the nav bar
+blog_description: Thoughts on robots and life, usually written on Sundays
 permalink: /blog/:year/:title/
 
 # Pagination
