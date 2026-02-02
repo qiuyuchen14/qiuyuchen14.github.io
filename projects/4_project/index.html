@@ -11,10 +11,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Zoey  Chen | </title>
+    <title>Zoey  Chen | Medical Images Analysis</title>
     <meta name="author" content="Zoey  Chen" />
-    <meta name="description" content="Zoey's website.
-" />
+    <meta name="description" content="Reconstruction of blood vessels from stereo x-ray images" />
 
 
     <!-- Bootstrap & MDB -->
@@ -34,7 +33,7 @@
     <link rel="shortcut icon" href="/assets/img//assets/img/zoey.JPG"/>
     
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="canonical" href="https://qiuyuchen14.github.io/invited_talks/talk6">
+    <link rel="canonical" href="https://qiuyuchen14.github.io/projects/4_project/">
     
     <!-- Dark Mode -->
     
@@ -86,8 +85,8 @@
               </li>
 
               <!-- Toogle theme mode -->
-              <div class = "toggle-container">
-                <a id = "light-toggle">
+              <div class="toggle-container">
+                <a id="light-toggle">
                   <i class="fas fa-moon"></i>
                   <i class="fas fa-sun"></i>
                 </a>
@@ -100,29 +99,57 @@
 
     <!-- Content -->
     <div class="container mt-5">
-      <!-- _layouts/post.html -->
+      <!-- page.html -->
+        <div class="post">
 
+          <header class="post-header">
+            <h1 class="post-title">Medical Images Analysis</h1>
+            <p class="post-description">Reconstruction of blood vessels from stereo x-ray images</p>
+          </header>
 
+          <article>
+            <p>We propose a fully automatic system to reconstruct and
+visualize 3D blood vessels in Augmented Reality (AR) system from stereo X-ray images with bones and body fat. Currently, typical 3D imaging technologies are expensive and
+carrying the risk of irradiation exposure. To reduce the potential harm, we only need to take two X-ray images before
+visualizing the vessels. Our system can effectively reconstruct and visualize vessels in following steps. We first conduct initial segmentation using Markov Random Field and
+then refine segmentation in an entropy based post-process.
+We parse the segmented vessels by extracting their centerlines and generating trees. We propose a coarse-to-fine
+scheme for stereo matching, including initial matching using affine transform and dense matching using Hungarian
+algorithm guided by Gaussian regression. Finally, we render and visualize the reconstructed model in a HoloLens
+based AR system, which can essentially change the way
+of visualizing medical data. We have evaluated its performance by using synthetic and real stereo X-ray images, and
+achieved satisfactory quantitative and qualitative results.</p>
 
-<div class="post">
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
 
-  <header class="post-header">
-    <h1 class="post-title"></h1>
-    <p class="post-meta">December 11, 2023</p>
-  </header>
+  <picture>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/medical_img/master_thesis_system.png" title="example image">
 
-  <article class="post-content">
-    Guest lecture at "Intro to Robotics" at University of Minnesota
-  </article>
+  </picture>
 
+</figure>
+
+    </div>
 </div>
+<div class="caption">
+    System overview
+</div>
+
+<p>Check out our <a href="https://openaccess.thecvf.com/content_ICCV_2017_workshops/papers/w1/Chen_Virtual_Blood_Vessels_ICCV_2017_paper.pdf" target="_blank" rel="noopener noreferrer">paper</a></p>
+
+          </article>
+
+        </div>
 
     </div>
 
     <!-- Footer -->    
     <footer class="fixed-bottom">
       <div class="container mt-0">
-        &copy; Copyright 2026 Zoey  Chen. 
+        © Copyright 2026 Zoey  Chen. 
       </div>
     </footer>
 

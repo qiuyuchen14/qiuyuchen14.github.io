@@ -11,10 +11,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Zoey  Chen | </title>
+    <title>Zoey  Chen | Sim2Real</title>
     <meta name="author" content="Zoey  Chen" />
-    <meta name="description" content="Zoey's website.
-" />
+    <meta name="description" content="Can we leverage the power of generative models and solve a long-standing issue in robotics?" />
 
 
     <!-- Bootstrap & MDB -->
@@ -34,7 +33,7 @@
     <link rel="shortcut icon" href="/assets/img//assets/img/zoey.JPG"/>
     
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="canonical" href="https://qiuyuchen14.github.io/invited_talks/talk6">
+    <link rel="canonical" href="https://qiuyuchen14.github.io/projects/3_project/">
     
     <!-- Dark Mode -->
     
@@ -86,8 +85,8 @@
               </li>
 
               <!-- Toogle theme mode -->
-              <div class = "toggle-container">
-                <a id = "light-toggle">
+              <div class="toggle-container">
+                <a id="light-toggle">
                   <i class="fas fa-moon"></i>
                   <i class="fas fa-sun"></i>
                 </a>
@@ -100,29 +99,61 @@
 
     <!-- Content -->
     <div class="container mt-5">
-      <!-- _layouts/post.html -->
+      <!-- page.html -->
+        <div class="post">
 
+          <header class="post-header">
+            <h1 class="post-title">Sim2Real</h1>
+            <p class="post-description">Can we leverage the power of generative models and solve a long-standing issue in robotics?</p>
+          </header>
 
+          <article>
+            <p>For decades, robotics has been facing a crucial issue: sim2real transfer. Collecting data in real world is very expensive,
+therefore, leveraging a simulator to provide infinite synthetic data seems to be a powerful approach. However transfering 
+policies trained in simulation to real world is not trivial. A lot of work in the past has been focusing on this direction including
+domain randomization, close-loop policy with real world feedback, or learning more semantic features beyond RGBD images. In this work, 
+we are trying to explore the possibility to use recent progress in GAN, and generate realistic images from synthetic images in a 
+simulator, in order to close the gap between sim to real.</p>
 
-<div class="post">
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
 
-  <header class="post-header">
-    <h1 class="post-title"></h1>
-    <p class="post-meta">December 11, 2023</p>
-  </header>
+  <picture>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/sim2real/sim2real.png" title="example image">
 
-  <article class="post-content">
-    Guest lecture at "Intro to Robotics" at University of Minnesota
-  </article>
+  </picture>
 
+</figure>
+
+    </div>
 </div>
+<div class="caption">
+    Left: Different approaches are investigated in this project. (1) domain randomization (2) Generated kitchen example using GauGAN (3) making synthetic images more realistic inside a simulator (4) inject only a small amount of real world data. 
+</div>
+<p>Many interesting observations deserve further investigation:</p>
+
+<p>(a) Our goal is that given an image with semantic masks, we can use GAN to “fill” textures so that it will look realistic.
+ We found that GAN couldn’t generate very great images with fine details with the scales of the current dataset. We train GaoGAN on ADE20K dataset. Because the training samples are not huge, the network couldn’t effectively learn
+expressive features that lead to good reconstructed images.</p>
+
+<p>(b) We evaluated different data types on real images. We found that by injecting even only 1% of the real images could improve detection results by 10%</p>
+
+<p>(c) how can we use domain randomization, GAN images, sim images, and a little real images, train a network that could better at sim to real transfer.</p>
+
+<p>More details are coming soon!</p>
+
+          </article>
+
+        </div>
 
     </div>
 
     <!-- Footer -->    
     <footer class="fixed-bottom">
       <div class="container mt-0">
-        &copy; Copyright 2026 Zoey  Chen. 
+        © Copyright 2026 Zoey  Chen. 
       </div>
     </footer>
 

@@ -11,10 +11,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Zoey  Chen | </title>
+    <title>Zoey  Chen | Dexterous Grasping</title>
     <meta name="author" content="Zoey  Chen" />
-    <meta name="description" content="Zoey's website.
-" />
+    <meta name="description" content="Can a robot learn from humans with only a few examples?" />
 
 
     <!-- Bootstrap & MDB -->
@@ -34,7 +33,7 @@
     <link rel="shortcut icon" href="/assets/img//assets/img/zoey.JPG"/>
     
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="canonical" href="https://qiuyuchen14.github.io/invited_talks/talk6">
+    <link rel="canonical" href="https://qiuyuchen14.github.io/projects/1_project/">
     
     <!-- Dark Mode -->
     
@@ -86,8 +85,8 @@
               </li>
 
               <!-- Toogle theme mode -->
-              <div class = "toggle-container">
-                <a id = "light-toggle">
+              <div class="toggle-container">
+                <a id="light-toggle">
                   <i class="fas fa-moon"></i>
                   <i class="fas fa-sun"></i>
                 </a>
@@ -100,29 +99,79 @@
 
     <!-- Content -->
     <div class="container mt-5">
-      <!-- _layouts/post.html -->
+      <!-- page.html -->
+        <div class="post">
 
+          <header class="post-header">
+            <h1 class="post-title">Dexterous Grasping</h1>
+            <p class="post-description">Can a robot learn from humans with only a few examples?</p>
+          </header>
 
+          <article>
+            <p>Teaching a multi-fingered dexterous robot to grasp objects in the real world has been a challenging problem due to 
+its high dimensional state and action space. We propose a robot-learning system that can take a small number of 
+human demonstrations and learn to grasp unseen object poses given partially occluded observations. Our system 
+leverages a small motion capture dataset and generates a large dataset with diverse and successful trajectories 
+for a multi-fingered robot gripper. By adding domain randomization, we show that our dataset provides robust 
+grasping trajectories that can be transferred to a policy learner. We train a dexterous grasping policy that 
+takes the point clouds of the object as input and predicts continuous actions to grasp objects from different 
+initial robot states. We evaluate the effectiveness of our system on a 22-DoF floating Allegro Hand in simulation 
+and a 23-DoF Allegro robot hand with a KUKA arm in the real world. The policy learned from our dataset can 
+generalize well on unseen object poses in both simulation and the real world.</p>
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
 
-<div class="post">
+  <picture>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/human_demos.gif" title="example image">
 
-  <header class="post-header">
-    <h1 class="post-title"></h1>
-    <p class="post-meta">December 11, 2023</p>
-  </header>
+  </picture>
 
-  <article class="post-content">
-    Guest lecture at "Intro to Robotics" at University of Minnesota
-  </article>
+</figure>
 
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/simulation.gif" title="example image">
+
+  </picture>
+
+</figure>
+
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/robot.gif" title="example image">
+
+  </picture>
+
+</figure>
+
+    </div>
 </div>
+<div class="caption">
+    Left: Human demonstrations. Middle: Policy on unseen poses. Right: Policy deployed on a robot. 
+</div>
+
+<p>check out our <a href="https://sites.google.com/view/dextransfer/home" target="_blank" rel="noopener noreferrer">website</a> and <a href="https://arxiv.org/abs/2209.14284" target="_blank" rel="noopener noreferrer">paper</a></p>
+
+          </article>
+
+        </div>
 
     </div>
 
     <!-- Footer -->    
     <footer class="fixed-bottom">
       <div class="container mt-0">
-        &copy; Copyright 2026 Zoey  Chen. 
+        © Copyright 2026 Zoey  Chen. 
       </div>
     </footer>
 

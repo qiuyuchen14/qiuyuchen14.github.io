@@ -11,10 +11,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Zoey  Chen | </title>
+    <title>Zoey  Chen | Implicit Shape Augmentation</title>
     <meta name="author" content="Zoey  Chen" />
-    <meta name="description" content="Zoey's website.
-" />
+    <meta name="description" content="Generate novel shapes and ways to grasp them given minimal human demonstrations." />
 
 
     <!-- Bootstrap & MDB -->
@@ -34,7 +33,7 @@
     <link rel="shortcut icon" href="/assets/img//assets/img/zoey.JPG"/>
     
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="canonical" href="https://qiuyuchen14.github.io/invited_talks/talk6">
+    <link rel="canonical" href="https://qiuyuchen14.github.io/projects/5_project/">
     
     <!-- Dark Mode -->
     
@@ -86,8 +85,8 @@
               </li>
 
               <!-- Toogle theme mode -->
-              <div class = "toggle-container">
-                <a id = "light-toggle">
+              <div class="toggle-container">
+                <a id="light-toggle">
                   <i class="fas fa-moon"></i>
                   <i class="fas fa-sun"></i>
                 </a>
@@ -100,29 +99,67 @@
 
     <!-- Content -->
     <div class="container mt-5">
-      <!-- _layouts/post.html -->
+      <!-- page.html -->
+        <div class="post">
 
+          <header class="post-header">
+            <h1 class="post-title">Implicit Shape Augmentation</h1>
+            <p class="post-description">Generate novel shapes and ways to grasp them given minimal human demonstrations.</p>
+          </header>
 
+          <article>
+            <p>Dexterous robotic hands have the capability to interact with a wide variety of household objects to perform tasks like grasping. However, learning robust real world grasping policies for arbitrary objects has proven challenging due to the difficulty of generating high quality training data. In this work, we propose a learning system (ISAGrasp) for leveraging a small number of human demonstrations to bootstrap the generation of a much larger dataset containing successful grasps on a variety of novel objects. Our key insight is to use a correspondence-aware implicit generative model to deform object meshes and demonstrated human grasps in order to generate a diverse dataset of novel objects and successful grasps for supervised learning, while maintaining semantic realism. We use this dataset to train a robust grasping policy in simulation which can be deployed in the real world. We demonstrate grasping performance with a four-fingered Allegro hand in both simulation and the real world, and show this method can handle entirely new semantic classes and achieve a 79% success rate on grasping unseen objects in the real world. 
+Check out our <a href="https://sites.google.com/view/implicitaugmentation/home" target="_blank" rel="noopener noreferrer">website</a></p>
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
 
-<div class="post">
+  <picture>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/isagrasp.png" title="example image">
 
-  <header class="post-header">
-    <h1 class="post-title"></h1>
-    <p class="post-meta">December 11, 2023</p>
-  </header>
+  </picture>
 
-  <article class="post-content">
-    Guest lecture at "Intro to Robotics" at University of Minnesota
-  </article>
+</figure>
 
+    </div>
 </div>
+<div class="caption">
+    An illustration of the training scheme in ISAGrasp. A few human demonstrations are provided from
+motion capture. These demonstrations are retargeted to a four-fingered allegro robot in simulation. We use a
+correspondence-aware generative model to extrapolate the retargeted demonstrations to a large dataset of novel
+objects. We use this dataset to train a single grasping policy that is able to generalize to a variety of unseen
+objects in simulation and real world.
+</div>
+
+<div style="text-align: center;">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/isagrasp.gif" title="example image">
+
+  </picture>
+
+</figure>
+
+    </div>
+</div>
+<div class="caption">
+    ISAGrasp significantly improves the generalization ability to unseen objects. We evaluated our policy on 22 unseen objects in real world and achieve 79% success rate.
+</div>
+
+          </article>
+
+        </div>
 
     </div>
 
     <!-- Footer -->    
     <footer class="fixed-bottom">
       <div class="container mt-0">
-        &copy; Copyright 2026 Zoey  Chen. 
+        © Copyright 2026 Zoey  Chen. 
       </div>
     </footer>
 
