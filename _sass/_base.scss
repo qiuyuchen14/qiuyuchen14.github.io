@@ -123,7 +123,7 @@ blockquote {
   margin: 1.75rem 0 0.75rem;
   font-size: 1.1em;
   font-style: italic;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 
@@ -307,6 +307,11 @@ footer.sticky-bottom {
     list-style: none;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    h3 {
+      font-size: 1.3rem;
+      font-weight: 400;
+      margin-bottom: 0.25rem;
+    }
     .post-meta {
       color: var(--global-text-color-light);
       font-size: 0.875rem;
