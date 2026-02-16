@@ -16,8 +16,11 @@ OK, to me, an ideal/perfect simulator should model:
 1. True **physics** of the real world: rigid body dynamics, deformation, force, friction, contact, thermal effects, compliance, internal stress, wear and tear.
 2. True **visual** distribution of the real world: texture, lighting, shadows, camera noise, latency.
 3. True **semantic** structure of the real world: realistic homes, object placement, scene logic.
-4. True social **interaction** among agents: how humans and animals react, communicate, and follow norms.
-5. True **causality** across timescales: milliseconds to years, from tiny defects to long-delayed failures.
+4. True social **interaction** among agents: how humans and animals would react and communicate, human emotions, social norms etc.
+5. True **causality** across timescales: the earthquake in Asia would cause a huge wave in Hawaii several days later, 
+a small mechanical error causing big failure weeks/months later. 
+It should integrate across timescales without collapsing, works for millisecond, second, minutes, hours, days and years. 
+
 
 If we have such a simulator, we would solve robotics. The reality is we are nowhere close to any of the points. 
 For physics, although we have great simulators such as Isaac and Mujoco which can model rigid body dynamics under some assumptions, 
