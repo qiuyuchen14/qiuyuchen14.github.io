@@ -53,7 +53,7 @@ The “future” state can be represented in different ways, leading to differen
 
 **1. Predicting frame by frame in the pixel space:**
 
-such as Genie 3, world lab and DreamDojo, and often its used in:
+such as Genie 3 and DreamDojo, and often its used in:
 
 1. Visual policy evaluation:
 
@@ -148,4 +148,3 @@ Many current demonstrations still focus on pick-and-place tasks, yet those are p
 VLA-style reactive policies already perform well. In short-horizon, well-covered settings, world models may add little marginal value. 
 Their real leverage emerges when the policy is uncertain, when tasks demand longer-horizon reasoning, when consequences are costly or 
 irreversible, or when systems need to escape local minima.  
-
