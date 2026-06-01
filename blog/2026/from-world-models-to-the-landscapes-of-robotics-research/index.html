@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <!-- Head -->
+  <head>    <!-- Metadata, OpenGraph and Schema.org -->
+    
+    <!-- Website verification -->
+    <meta name="google-site-verification" content="" /><meta name="msvalidate.01" content="" />
+
+    <!-- Standard metadata -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Zoey  Chen | From World Models to the Landscapes of Robotics Research.</title>
+    <meta name="author" content="Zoey  Chen" />
+    <meta name="description" content="notes on where world models help in robotics, and where they do not." />
+
+
+    <!-- Bootstrap & MDB -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-DF7Zhf293AJxJNTmh5zhoYYIMs2oXitRfBjY+9L//AY=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous" />
+
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha256-i1+4qU2G2860dGGIOJscdC30s9beBXjFfzjWLjBRsBg=" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
+
+    <!-- Code Syntax Highlighting -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/github.css" media="none" id="highlight_theme_light" />
+
+    <!-- Styles -->
+    
+    <link rel="shortcut icon" href="/assets/img//assets/img/zoey.JPG"/>
+    
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="canonical" href="https://qiuyuchen14.github.io/blog/2026/from-world-models-to-the-landscapes-of-robotics-research/">
+    
+    <!-- Dark Mode -->
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/native.css" media="none" id="highlight_theme_dark" />
+
+    <script src="/assets/js/theme.js"></script>
+    <script src="/assets/js/dark_mode.js"></script>
+    
+
+  </head>
+
+  <!-- Body -->
+  <body class="fixed-top-nav ">
+
+    <!-- Header -->
+    <header>
+
+      <!-- Nav Bar -->
+      <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
+        <div class="container">
+          <a class="navbar-brand title font-weight-lighter" href="https://qiuyuchen14.github.io/"><span class="font-weight-bold">Zoey</span>   Chen</a>
+          <!-- Navbar Toggle -->
+          <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar top-bar"></span>
+            <span class="icon-bar middle-bar"></span>
+            <span class="icon-bar bottom-bar"></span>
+          </button>
+
+          <div class="collapse navbar-collapse text-right" id="navbarNav">
+            <ul class="navbar-nav ml-auto flex-nowrap">
+
+              <!-- About -->
+              <li class="nav-item ">
+                <a class="nav-link" href="/">about</a>
+              </li>
+              
+              <!-- Blog -->
+              <li class="nav-item active">
+                <a class="nav-link" href="/blog/">blog</a>
+              </li>
+
+              <!-- Other pages -->
+              <li class="nav-item ">
+                <a class="nav-link" href="/publications/">Publications</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/projects/">projects</a>
+              </li>
+
+              <!-- Toogle theme mode -->
+              <div class="toggle-container">
+                <a id="light-toggle">
+                  <i class="fas fa-moon"></i>
+                  <i class="fas fa-sun"></i>
+                </a>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Content -->
+    <div class="container mt-5">
+      <!-- _layouts/post.html -->
+
+
+
+<div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">From World Models to the Landscapes of Robotics Research.</h1>
+    <p class="post-meta">February 16, 2026</p>
+  </header>
+
+  <article class="post-content">
+    <p>Write down some thoughts to help me think in a bigger picture: how do world models fit into the current robotics landscape, when and how to use them, and when and why not to.</p>
+
+<p><span class="inline-subtitle">The Ultimate Debate</span></p>
+
+<p>A lot of robotics research is ultimately a bet around one thing: data. Real-world data collection is expensive, slow and hard to scale. Simulation becomes a natural bet.</p>
+
+<p>OK, to me, an ideal/perfect simulator should model:</p>
+
+<ol>
+  <li>True <strong>physics</strong> of the real world: rigid body dynamics, deformation, force, friction, contact, thermal effects, compliance, internal stress, wear and tear.</li>
+  <li>True <strong>visual</strong> distribution of the real world: texture, lighting, shadows, camera noise, latency.</li>
+  <li>True <strong>semantic</strong> structure of the real world: realistic homes, object placement, scene logic.</li>
+  <li>True social <strong>interaction</strong> among agents: how humans and animals would react and communicate, human emotions, social norms etc.</li>
+  <li>True <strong>causality</strong> across timescales: the earthquake in Asia would cause a huge wave in Hawaii several days later, 
+a small mechanical error causing big failure weeks/months later. 
+It should integrate across timescales without collapsing, works for millisecond, second, minutes, hours, days and years.</li>
+</ol>
+
+<p>If we have such a simulator, we would solve robotics. The reality is we are nowhere close to any of the points. 
+For physics, although we have great simulators such as Isaac and Mujoco which can model rigid body dynamics under some assumptions, 
+they struggle with fluid dynamics and complex contact. For perception, we have good rendering with Nvidia’s ray tracing, 
+but it can never reach detailed visual distribution such as rich textures and shadows. 
+For semantics, We are making great progress in real-to-sim, such as the recent SceneSmith, 
+we are nowhere near modeling the full chaos and fine granularity of our world. 
+For behaviors, we have networks that can predict human emotions, but modeling multi-agent behaviors or human–robot 
+interaction dynamics still remains an open challenge. Finally, even humans have been doing weather forecasting for decades, 
+and we only need to care about air and fluid dynamics. We can only predict like 7–10 days ahead of time, and the results are not usually accurate.</p>
+
+<p>This also explains why physical AI is fundamentally hard, because robotics requires solving: physics, perception, common sense reasoning, behavior modeling and long-horizon modeling at the same time. Errors and noise in any of these layers can cause failure when robots operate in the real world.</p>
+
+<p>One pragmatic response is to abandon simulation and focus entirely on real-world data: figure out ways to collect large-scale data and train imitation policies directly in the real environment. (Pi, Sunday robotics, generalist etc).  However, scaling real-world data does not eliminate distributional shifts. When a purely reactive policy encounters an OOD state, recovery can be difficult. The policy maps states to actions based on training distribution, and it has no internal mechanism to evaluate alternative futures or reason about how to return to familiar regions of the state action space.</p>
+
+<p>One approach is human-in-the-loop correction. When the robot deviates from expected trajectories, a human intervenes and provides additional demonstrations or corrective feedback (DAgger). Over time, this expands the coverage of the dataset and improves robustness, but this approach is still hard to scale. It still requires expensive supervision, and rare or catastrophic states may still remain underrepresented.</p>
+
+<p>Conceptually, what is missing from a purely reactive policy is foresight. The robot needs some way to anticipate consequences before committing to them in the physical world, especially when mistakes could lead to costly or even fatal failures.</p>
+
+<p><span class="inline-subtitle">Entering the World Model</span></p>
+
+<p>Building such a simulator is almost impossible by hand, and that’s exactly the motivation of world models:
+Can we “imagine” what happens by learning directly from real-world data?
+Ideally, we want the world models to bridge parts of the sim2real gap. Rather than modeling physics, semantics, and behavior explicitly with math and equations (traditional simulators), we train a neural network to approximate:</p>
+
+<p><code class="language-plaintext highlighter-rouge">p(future | current_state, action)</code></p>
+
+<p>The “future” state can be represented in different ways, leading to different design choices and tradeoffs:</p>
+
+<p><strong>1. Predicting frame by frame in the pixel space:</strong></p>
+
+<p>such as Genie 3 and DreamDojo, and often its used in:</p>
+
+<ol>
+  <li>
+    <p>Visual policy evaluation:</p>
+
+    <p>(a) Evaluating Gemini Robotics Policies in a Veo World Simulator (2025)</p>
+
+    <p>(b) WorldGym (Quevedo et al., 2025)</p>
+  </li>
+  <li>
+    <p>Data generation via imagination:</p>
+
+    <p>(a) DreamGen (Jang et al., 2025)</p>
+
+    <p>(b) Ctrl-World (Guo et al., 2025)</p>
+  </li>
+  <li>
+    <p>Inference-time planning via generated rollouts:</p>
+
+    <p>(a) Large Video Planner Enables Generalizable Robot Control (Chen et al, 2025): using video generation to imagine how humans do tasks and retarget to a robot.</p>
+
+    <p>(b) Cosmos Policy (Kim et al., 2026)</p>
+  </li>
+</ol>
+
+<p>Pros: keeps all perceptual information so its more expressive, easy to debug and evaluate, aligned well with vision-based policies</p>
+
+<p>Cons: Computationally expensive and not great at long-horizon planning which is essential for robot tasks, visual info does not cover all physics info.</p>
+
+<p>(Inspired by Anirudha’s pointers from: https://x.com/Majumdar_Ani/status/2021242532517040560)</p>
+
+<p><strong>2. Predicting state and reward (Control-Oriented Latent Dynamics):</strong></p>
+
+<p>such as Robotic World Model (Li, et.al, 2025), Dreamer-style models and classic model-based RL</p>
+
+<p>These models learn a (sometimes latent) dynamics model: operate in  learned latent state or structured state space (joint positions, velocities, object states) and are typically used as a learned simulator to train a robot policy.</p>
+
+<p>Pros: more efficient and potentially works for longer horizon tasks than pixel prediction, and its directly aligned with control</p>
+
+<p>Cons: requires some well-defined state representation and usually less expressive, still doesn’t solve the model bias or exploitation issue.</p>
+
+<p><strong>3. latent state transitions such as JEPA, V-JEPA 2</strong></p>
+
+<p>The goal is not to simulate for policy optimization, but to learn task-relevant, predictable structure while ignoring nuisance details like texture or lighting.</p>
+
+<p>Pros: theoretically better for long-horizon and more efficient because the network does not need to waste so many parameters to capture non-relevant features</p>
+
+<p>Cons: hard to evaluate, not straightforward for control dynamics</p>
+
+<p><strong>4. World Action Models (joint state-action generation)</strong></p>
+
+<p>These models such as Dream zero (Jang et al., 2026) learn a joint distribution over trajectories, for both states and actions. So it approximates the world model as a robot policy.</p>
+
+<p>Pros: unifies world model and policy, make state more coherent with actions.</p>
+
+<p>Cons: model bias directly translates into control errors</p>
+
+<p><span class="inline-subtitle">Tradeoff</span></p>
+
+<p>We want a model that maximizes: realism, stability, scalability, and long-horizon reasoning, 
+but we cannot optimize all simultaneously. Frame to frame Pixel prediction maximizes visual realism and expressiveness, 
+state models maximize control stability and efficiency, latent models maximize abstraction and scalability across time, 
+WAM models maximize coherent state–action priors. No single representation dominates across all axes.</p>
+
+<p><span class="inline-subtitle">New Trend</span>
+<strong>Hybrid Systems</strong> such as WorldVLA and RynnVLA-002: Instead of replacing policies, world models can be used selectively. Since world models are slow, a fast reactive policy can handle general tasks, but when the policy is uncertain or the system detects OOD states, it can ask world models and validate several actions.</p>
+
+<p><strong>Foundation-Style</strong> World Models (UWM from Chuning): learn a broader joint distribution from heterogeneous data, which then can be used as a powerful backbone and can be used as a policy, or extract forward/inverse dynamics or do video prediction and so on.</p>
+
+<p><span class="inline-subtitle">The Bigger Picture</span></p>
+
+<p>Imitation policies are highly sensitive to demonstration quality. 
+Because they directly map states to actions, suboptimal or inconsistent demonstrations can degrade performance. 
+In contrast, world models learn transition structure rather than behavioral optimality. 
+Even failed or imperfect trajectories still provide useful information about how the environment responds to actions. 
+As long as the dataset covers diverse state–action regions, world models can benefit from broader and noisier data.</p>
+
+<p>World models exist because perfect simulation is impossible to design, and pure policy learning struggles with data efficiency and safety. 
+However, world models also does not solve all the existing problems, but more like shifting the focus 
+from modeling explicit physics errors to learned model bias, and from lacking supervision to managing uncertainty in imagination.</p>
+
+<p>World models should not be viewed as oracles or standalone decision-makers, 
+but as structured priors whose value although imperfect, might reduce search complexity in planning and policy learning<br>
+(inspired by reading the article from Vikash: https://x.com/Vikashplus/status/2023388132415058277). 
+The real question, then, is not whether world models are “better,” but where they can meaningfully reduce risk, cost, or uncertainty.</p>
+
+<p>In other words, If a world model does not reduce complexity somewhere, it is not adding value.</p>
+
+<p>Many current demonstrations still focus on pick-and-place tasks, yet those are precisely the regimes where large 
+VLA-style reactive policies already perform well. In short-horizon, well-covered settings, world models may add little marginal value. 
+Their real leverage emerges when the policy is uncertain, when tasks demand longer-horizon reasoning, when consequences are costly or 
+irreversible, or when systems need to escape local minima.</p>
+
+  </article>
+
+</div>
+
+    </div>
+
+    <!-- Footer -->    
+    <footer class="fixed-bottom">
+      <div class="container mt-0">
+        © Copyright 2026 Zoey  Chen. 
+      </div>
+    </footer>
+
+    <!-- JavaScripts -->
+    <!-- jQuery -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- Bootsrap & MDB scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script>
+
+    <!-- Masonry & imagesLoaded -->
+  <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+  <script defer src="/assets/js/masonry.js" type="text/javascript"></script>
+    
+  <!-- Medium Zoom JS -->
+  <script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.8/dist/medium-zoom.min.js" integrity="sha256-7PhEpEWEW0XXQ0k6kQrPKwuoIomz8R8IYyuU1Qew4P8=" crossorigin="anonymous"></script>
+  <script src="/assets/js/zoom.js"></script><!-- Load Common JS -->
+  <script src="/assets/js/common.js"></script>
+
+    <!-- MathJax -->
+  <script type="text/javascript">
+    window.MathJax = {
+      tex: {
+        tags: 'ams'
+      }
+    };
+  </script>
+  <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7T85FW0C7L"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-7T85FW0C7L');
+  </script>
+  </body>
+</html>
+
