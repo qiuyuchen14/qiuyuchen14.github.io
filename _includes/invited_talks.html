@@ -1,32 +1,16 @@
-
-          <div class="invited_talks">
-            <h2>Invited Talks</h2>
-<!--            {% if site.invited_talks != blank -%}-->
-            <div class="table-responsive">
-              <table class="table table-sm table-borderless">
-              {%- assign news = site.invited_talks | reverse -%}
-<!--              {% for item in news limit: site.news_limit %}-->
-                <tr>
-                  <th scope="row">{{ item.date | date: "%b %-d, %Y" }}</th>
-                  <td>
-                    {% if item.inline -%}
-                      {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
-                    {%- else -%}
-                      <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
-                    {%- endif %}
-                  </td>
-                </tr>
-              {%- endfor %}
-              </table>
-            </div>
-<!--          {%- else -%}-->
-            <p>Dec 11, 2023: How to train your robot, Guest lecture at "Intro to Robotics" class at the University of Minnesota</p>
-            <p>Dec 1, 2023: Learning from Imagination, Georgia Tech RoboGrads Student Seminar</p>
-            <p>Nov 15, 2023: Learning to generalize with minimum demonstrations, UW Industry Day  </p>
-            <p>May 30, 2023: Training robots with limited demonstrations, Tutorial at "Robotics" class at UW </p>
-            <p>Mar 1, 2023: GenAug, META Research EAI Seminar </p>
-            <p>Dec 1, 2022: Grasping with minimal human demonstrations, UW CSE Colloqium Robotics Research Show Case</p>
-            <p>Nov 15, 2022: ISAGrasp, Industry Affiliates Research Day</p>
-            <p>Aug 20, 2022: ISAGrasp, META Research EAI Seminar</p>
-<!--          {%- endif %}-->
-          </div>
+<section id="talks" aria-labelledby="talks-heading">
+  <h2 id="talks-heading">Talks</h2>
+  <details class="invited_talks">
+    <summary>Selected invited talks, 2022–2023</summary>
+    <ul>
+      <li><time datetime="2023-12-11">Dec 11, 2023</time> · How to train your robot — guest lecture, Intro to Robotics, University of Minnesota</li>
+      <li><time datetime="2023-12-01">Dec 1, 2023</time> · Learning from Imagination — Georgia Tech RoboGrads Student Seminar</li>
+      <li><time datetime="2023-11-15">Nov 15, 2023</time> · Learning to generalize with minimum demonstrations — UW Industry Day</li>
+      <li><time datetime="2023-05-30">May 30, 2023</time> · Training robots with limited demonstrations — Robotics tutorial, UW</li>
+      <li><time datetime="2023-03-01">Mar 1, 2023</time> · GenAug — Meta Research EAI Seminar</li>
+      <li><time datetime="2022-12-01">Dec 1, 2022</time> · Grasping with minimal human demonstrations — UW CSE Colloquium Robotics Research Showcase</li>
+      <li><time datetime="2022-11-15">Nov 15, 2022</time> · ISAGrasp — Industry Affiliates Research Day</li>
+      <li><time datetime="2022-08-20">Aug 20, 2022</time> · ISAGrasp — Meta Research EAI Seminar</li>
+    </ul>
+  </details>
+</section>

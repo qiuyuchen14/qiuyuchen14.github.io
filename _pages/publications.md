@@ -2,7 +2,7 @@
 layout: page
 permalink: /publications/
 title: Publications
-description: 
+description: Research papers, full abstracts, and links to code and project websites.
 sections:
   - bibquery: "@inproceedings"
     text: "Conference and workshop papers"

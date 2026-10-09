@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Dexterous Grasping
+hide_from_homepage: true
 description: Can a robot learn from humans with only a few examples?
 img: assets/img/robot.gif
 importance: 1

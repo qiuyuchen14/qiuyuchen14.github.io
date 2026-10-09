@@ -2,7 +2,8 @@
 layout: post
 title: Robotics Ecosystems, from Shenzhen to SF
 date: 2026-02-01 09:00:00
-description: My own observations on the robotics pace, ecosystem and the social vibes. 
+description: Observations on how manufacturing, research, and community shape the pace of robotics in China and the US.
+homepage: true
 ---
 <span class="inline-subtitle">A Trip to China</span>
 

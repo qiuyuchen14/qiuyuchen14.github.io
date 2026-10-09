@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Implicit Shape Augmentation
+hide_from_homepage: true
 description: Generate novel shapes and ways to grasp them given minimal human demonstrations. 
 img: assets/img/isagrasp.gif
 importance: 5

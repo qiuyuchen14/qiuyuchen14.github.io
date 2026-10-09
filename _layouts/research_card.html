@@ -1,0 +1,11 @@
+---
+---
+<article class="research-card">
+  <a class="research-image" href="{{ entry.website }}" tabindex="-1" aria-hidden="true"><img src="{{ entry.preview | relative_url }}" alt="" loading="lazy" decoding="async" width="208" height="130"></a>
+  <div>
+    <h3><a href="{{ entry.website }}">{{ entry.short_title }}</a></h3>
+    <p class="card-venue">{{ entry.abbr }} {{ entry.year }}</p>
+    {% if entry.note %}<span class="{% if entry.note_style == 'plain' %}publication-note{% else %}publication-award{% endif %}">{{ entry.note | strip }}</span>{% endif %}
+    <p>{{ entry.card_summary }}</p>
+  </div>
+</article>

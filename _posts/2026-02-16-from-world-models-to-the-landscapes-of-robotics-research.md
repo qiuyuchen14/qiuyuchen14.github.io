@@ -1,8 +1,9 @@
 ---
 layout: post
-title: From World Models to the Landscapes of Robotics Research.
+title: From World Models to the Landscapes of Robotics Research
 date: 2026-02-16 09:00:00
-description: notes on where world models help in robotics, and where they do not.
+description: Where world models help in robotics, where they fall short, and how to judge their value beyond a compelling demo.
+homepage: true
 ---
 
 Write down some thoughts to help me think in a bigger picture: how do world models fit into the current robotics landscape, when and how to use them, and when and why not to.

@@ -1,56 +1,41 @@
 ---
 layout: default
 ---
+<div class="post homepage">
+  <div class="intro">
+    <aside class="profile-panel" aria-label="Portrait and profiles">
+    {% if page.profile.image %}
+    <img class="portrait" src="{{ page.profile.image | prepend: '/assets/img/' | relative_url }}" alt="{{ page.profile.alt | escape }}" width="300" height="400">
+    {% endif %}
+    {% include profile_links.html %}
+    </aside>
+    <div class="intro-copy">
+      <h1>{{ site.first_name }} {{ site.last_name }}</h1>
+      <div class="introduction">{{ content }}</div>
+    </div>
+  </div>
 
-<!-- about.html -->
-      <div class="post">
-        <header class="post-header">
-          <h1 class="post-title">
-           {% if site.title == "blank" -%}<span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }} {{ site.last_name }}{%- else -%}{{ site.title }}{%- endif %}
-          </h1>
-          <p class="desc">{{ page.subtitle }}</p>
-        </header>
+  {% include recent_writing.html %}
 
-        <article>
-          {% if page.profile -%}
-          <div class="profile float-{%- if page.profile.align == 'left' -%}left{%- else -%}right{%- endif -%}">
-            {%- if page.profile.image %}
-              {%- assign profile_image_path = page.profile.image | prepend: 'assets/img/' -%}
-              {% include figure.html 
-              path=profile_image_path 
-              class="img-fluid z-dept-1 rounded"
-              alt=page.profile.image -%}
-            {% endif -%}
-            {%- if page.profile.address %}
-            <div class="address">
-              {{ page.profile.address }}
-            </div>
-            {%- endif %}
-          </div>
-          {%- endif %}
+  <section id="research" class="research-highlights" aria-labelledby="research-heading">
+    <h2 id="research-heading">Selected research</h2>
+    {% bibliography -f papers -T research_card -q @*[featured=true]* %}
+  </section>
 
-          <div class="clearfix">
-            {{ content }}
-          </div>
+  {% if page.selected_papers %}
+    {% include selected_papers.html %}
+  {% endif %}
+  {% include invited_talks.html %}
 
-          {% if page.selected_papers -%}
-            <!-- apers -->
-            {%- include selected_papers.html %}
-          {%- endif %}
-          {%- include invited_talks.html %}
-          {%- if page.social %}
-          <!-- Social -->
-          <div class="social">
-            <div class="contact-icons">
-            {% include social.html %}
-            </div>
-
-            <div class="contact-note">
-              {{ site.contact_note }}
-            </div>
-            
-          </div>
-          {%- endif %}
-        </article>
-
+  <section id="projects" class="earlier-projects" aria-labelledby="projects-heading">
+    <h2 id="projects-heading">Earlier projects</h2>
+    <ul class="project-rows">
+      {% assign projects = site.projects | sort: 'importance' %}
+      {% for project in projects %}
+      {% unless project.hide_from_homepage %}
+      <li><a href="{{ project.url | relative_url }}">{{ project.title }}</a><span>{{ project.description }}</span></li>
+      {% endunless %}
+      {% endfor %}
+    </ul>
+  </section>
 </div>

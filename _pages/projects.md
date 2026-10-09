@@ -2,9 +2,9 @@
 layout: page
 title: projects
 permalink: /projects/
-description: Not all the projects are completed with success. I'm grateful for all the skills and lessons learned on failed ones too!
+description: Selected research and earlier explorations in robotics and computer vision.
 nav: true
-display_categories: [work, fun]
+display_categories: [work]
 horizontal: false
 ---
 

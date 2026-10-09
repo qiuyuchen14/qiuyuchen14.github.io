@@ -1,5 +1,6 @@
 @Article{chen2025semantically,
   author  = {Chen, Zoey and Mandi, Zhao and Bharadhwaj, Homanga and Sharma, Mohit and Song, Shuran and Gupta, Abhishek and Kumar, Vikash},
+  cofirst_authors = {3},
   title   = {Semantically Controllable Augmentations for Generalizable Robot Learning},
   journal = {The International Journal of Robotics Research (IJRR)},
   year    = {2025},
@@ -10,7 +11,8 @@
   abstract = {Generalization to unseen real-world scenarios for robot manipulation requires exposure to diverse datasets during training. However, collecting large real-world datasets is intractable due to high operational costs. For robot learning to generalize despite these challenges, it is essential to leverage sources of data or priors beyond the robot's direct experience. In this work, we posit that image-text generative models, which are pre-trained on large corpora of web-scraped data, can serve as such a data source. These generative models encompass a broad range of real-world scenarios beyond a robot's direct experience and can synthesize novel synthetic experiences that expose robotic agents to additional world priors aiding real-world generalization at no extra cost. In particular, our approach leverages pre-trained generative models as an effective tool for data augmentation. We propose a generative augmentation framework for semantically controllable augmentations and rapidly multiplying robot datasets while inducing rich variations that enable real-world generalization. Based on diverse augmentations of robot data, we show how scalable robot manipulation policies can be trained and deployed both in simulation and in unseen real-world environments such as kitchens and table-tops. By demonstrating the effectiveness of image-text generative models in diverse real-world robotic applications, our generative augmentation framework provides a scalable and efficient path for boosting generalization in robot learning at no extra human cost.},
   paper   = {2409.00951},
   preview = {/assets/img/publication_preview/ijrr.jpg},
-  selected={false}
+  summary = {Generative models expand robot training data with controllable changes to objects and scenes, helping learned skills transfer to unfamiliar real-world environments.},
+  selected={true}
 }
 
 @InProceedings{vemuri2025duolingo,
@@ -27,6 +29,10 @@
 }
 
 @InProceedings{chen2024urdformer,
+  featured = {true},
+  short_title = {URDFormer},
+  card_summary = {Builds interactive simulation scenes from a single real photo.},
+  summary = {URDFormer turns real images into interactive simulation scenes. This makes it easier to create varied environments for training and evaluating robots without building each scene by hand.},
   author    = {Chen, Zoey and Walsman, Aaron and Memmel, Marius and Mo, Kaichun and Fang, Alex  and  Vemuri, Karthikeya and Wu, Alan and Fox, Dieter and Gupta, Abhishek},
   booktitle = {Robotics: Science and Systems (RSS)},
   title     = {URDFormer: Constructing Interactive Realistic Scenes from Real Images via Simulation and Generative Modeling},
@@ -48,6 +54,7 @@
   paper       = {2405.11656},
   abbr      = {RSS},
   note={Oral Presentation at CoRL TGR workshop},
+  note_style={plain},
   preview={/assets/img/publication_preview/rss_urdformer.gif}
 }
 
@@ -86,6 +93,10 @@ abstract  = {Large, high-capacity models trained on diverse datasets have shown 
 }
 
 @InProceedings{chen2023genaug,
+  featured = {true},
+  short_title = {GenAug},
+  card_summary = {Uses image generation to turn a few robot demos into many.},
+  summary = {GenAug uses generative image models to vary the scenes in robot demonstrations, helping robots apply learned skills to new objects and settings with little additional real-world data.},
   author    = {Chen, Zoey and Kiami, Sho and Gupta, Abhishek and Kumar, Vikash},
   booktitle = {Robotics: Science and Systems (RSS)},
   title     = {GenAug: Retargeting Behaviors to Unseen Situations via Generative Augmentation},
@@ -139,6 +150,10 @@ feature projections. },
 }
 
 @InProceedings{chen2022learning,
+  featured = {true},
+  short_title = {ISAGrasp},
+  card_summary = {Teaches a robot hand to grasp new objects from a few human demos.},
+  summary = {ISAGrasp expands a few human demonstrations into a diverse set of objects and grasps. Policies trained on this data in simulation can grasp unfamiliar objects with a real robot hand.},
   author    = {Chen, Zoey Qiuyu and Van Wyk, Karl and Chao, Yu-Wei and Yang, Wei and Mousavian, Arsalan and Gupta, Abhishek and Fox, Dieter},
   booktitle = {Conference on Robot Learning (CoRL)},
   title     = {Learning Robust Real-world Dexterous Grasping Policies via Implicit Shape Augmentation},
@@ -158,7 +173,7 @@ the real world. },
   preview={/assets/img/publication_preview/isagrasp.gif}
 }
 
-@InProceedings{chen2022learning,
+@InProceedings{chen2022dextransfer,
   author    = {Chen, Zoey Qiuyu and Van Wyk, Karl and Chao, Yu-Wei and Yang, Wei and Mousavian, Arsalan and Gupta, Abhishek and Fox, Dieter},
   booktitle = {Robotics: Science and Systems (RSS) workshop},
   title     = {DexTransfer: Real World Multi-fingered Dexterous Grasping with Minimal Human Demonstrations},

@@ -6,19 +6,18 @@ permalink: /
 profile:
   align: right
   image: zoey.jpg
-  image_cicular: true # crops the image to make it circular
+  alt: Zoey Chen
 
 
 latest_posts: false  # includes a list of the newest posts
 selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true  # includes social icons at the bottom of the page
+social: false # contact links appear below the portrait
 ---
 
-I received my Ph.D. in Computer Science and Engineering from the University of Washington, where I was fortunate to be advised by [Dieter Fox](https://homes.cs.washington.edu/~fox/) and [Abhishek Gupta](https://abhishekunique.github.io/). 
-My research interests are imitation learning and robot manipulation, with a particular focus on learning to generate diverse data for robots such that learning from limited data is possible. Prior to my PhD life, I did my master 
-from Electrical Engineering Department at the University of Washington advised by [Jenq-Neng Hwang](https://people.ece.uw.edu/hwang/) and [Imari Sato](http://research.nii.ac.jp/~imarik/). I am also fortunate to have interned with many awesome mentors in the past at
-National Institute of Informatics (Tokyo), Microsoft Research (Redmond), NNAISENSE (Lugano), Nvidia Robotics Lab (Seattle) and Meta robotics lab (Pittsburgh). 
+I am a roboticist and AI researcher building the next generation of robots for home entertainment (more coming soon!).
 
-In my spare time, I enjoy playing the piano, painting, movies, cooking, hiking, board games, and recently snorkeling :) 
+I received my PhD in Computer Science & Engineering from the University of Washington, advised by [Dieter Fox](https://homes.cs.washington.edu/~fox/) and [Abhishek Gupta](https://abhishekunique.github.io/). My research focuses on robot learning, generative models, and simulation, particularly how robots can generalize from limited experience. Before my Ph.D., I earned a master's degree in Electrical Engineering at UW, advised by [Jenq-Neng Hwang](https://people.ece.uw.edu/hwang/) and [Imari Sato](https://research.nii.ac.jp/~imarik/).
 
-[Email](mailto:qiuyuchen14@gmail.com)   /  [Twitter](https://twitter.com/ZoeyC17)  /  [Github](https://github.com/qiuyuchen14)  /  [LinkedIn](https://linkedin.com/in/zoey-chen-01a31a200)  /  [Google Scholar](https://scholar.google.com/citations?user=ZT8ib-AAAAAJ&hl=en)  /  [Thesis](https://www.proquest.com/openview/5bcdaaef7f8bef7898272ab8a56b58eb/1?pq-origsite=gscholar&cbl=18750&diss=y)
+During my PhD, I had the wonderful opportunity to spend two years doing research at NVIDIA Robotics Lab (Seattle) and seven months at Meta Robotics Lab (Pittsburgh), starting as a research intern and continuing as a part-time student researcher. I also enjoyed research internships at the National Institute of Informatics (Tokyo), NNAISENSE (Lugano), and Microsoft Research (Redmond).
+
+Outside work, I enjoy piano, painting, cooking, hiking, and exploring new places.
