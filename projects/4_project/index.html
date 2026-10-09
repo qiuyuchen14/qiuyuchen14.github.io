@@ -11,23 +11,23 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Zoey  Chen | blog</title>
+    <title>Zoey  Chen | Medical Image Analysis</title>
     <meta name="author" content="Zoey  Chen" />
-    <meta name="description" content="Zoey Chen works on robotics, machine learning, and simulation for real-world robot learning. Research, publications, and personal writing." />
+    <meta name="description" content="Reconstruction of blood vessels from stereo X-ray images." />
 
     <!-- OpenGraph -->
     <meta property="og:site_name" content="Zoey  Chen" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Zoey  Chen | blog" />
-    <meta property="og:url" content="https://qiuyuchen14.github.io/blog/" />
-    <meta property="og:description" content="Zoey Chen works on robotics, machine learning, and simulation for real-world robot learning. Research, publications, and personal writing." />
+    <meta property="og:title" content="Zoey  Chen | Medical Image Analysis" />
+    <meta property="og:url" content="https://qiuyuchen14.github.io/projects/4_project/" />
+    <meta property="og:description" content="Reconstruction of blood vessels from stereo X-ray images." />
     
     <meta property="og:locale" content="en" />
 
     <!-- Twitter card -->
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Zoey  Chen | blog" />
-    <meta name="twitter:description" content="Zoey Chen works on robotics, machine learning, and simulation for real-world robot learning. Research, publications, and personal writing." />
+    <meta name="twitter:title" content="Zoey  Chen | Medical Image Analysis" />
+    <meta name="twitter:description" content="Reconstruction of blood vessels from stereo X-ray images." />
     
     <meta name="twitter:site" content="@ZoeyC17" />
     <meta name="twitter:creator" content="@ZoeyC17" />
@@ -52,7 +52,7 @@
     <link rel="shortcut icon" href="/assets/img/zoey.jpg"/>
     
     <link rel="stylesheet" href="/assets/css/main.css?v=1791525306">
-    <link rel="canonical" href="https://qiuyuchen14.github.io/blog/">
+    <link rel="canonical" href="https://qiuyuchen14.github.io/projects/4_project/">
     
     <!-- Dark Mode -->
     
@@ -73,7 +73,7 @@
   <div class="container bar-content">
     <a class="site-name" href="/">Zoey Chen</a>
     <nav class="section-nav" aria-label="Main navigation">
-      <a href="/#writing" aria-current="page">Writing</a>
+      <a href="/#writing">Writing</a>
       <a href="/#research">Research</a>
       <a href="/publications/">Publications</a>
       <a href="/#talks">Talks</a>
@@ -91,74 +91,50 @@
 
     <!-- Content -->
     <main id="main" class="container site-content" tabindex="-1">
-      <div class="post">
+      <!-- page.html -->
+        <div class="post">
 
-  <div class="header-bar">
-    <h1>Sunday Notes</h1>
-    <h2>Thoughts on robots and life, usually written on Sundays</h2>
-  </div>
+          <header class="post-header">
+            <h1 class="post-title">Medical Image Analysis</h1>
+            <p class="post-description">Reconstruction of blood vessels from stereo X-ray images.</p>
+          </header>
 
+          <article>
+            <p>We propose a fully automatic system to reconstruct and
+visualize 3D blood vessels in Augmented Reality (AR) system from stereo X-ray images with bones and body fat. Currently, typical 3D imaging technologies are expensive and
+carrying the risk of irradiation exposure. To reduce the potential harm, we only need to take two X-ray images before
+visualizing the vessels. Our system can effectively reconstruct and visualize vessels in following steps. We first conduct initial segmentation using Markov Random Field and
+then refine segmentation in an entropy based post-process.
+We parse the segmented vessels by extracting their centerlines and generating trees. We propose a coarse-to-fine
+scheme for stereo matching, including initial matching using affine transform and dense matching using Hungarian
+algorithm guided by Gaussian regression. Finally, we render and visualize the reconstructed model in a HoloLens
+based AR system, which can essentially change the way
+of visualizing medical data. We have evaluated its performance by using synthetic and real stereo X-ray images, and
+achieved satisfactory quantitative and qualitative results.</p>
 
-  <ul class="post-list">
-    
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
 
-    <li>
-      <h3>
-        
-          <a class="post-title" href="/blog/2026/from-world-models-to-the-landscapes-of-robotics-research/">From World Models to the Landscapes of Robotics Research</a>
-        
-      </h3>
-      <p class="post-meta">February 16, 2026</p>
-    </li>
+  <picture>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/medical_img/master_thesis_system.png" title="example image">
 
-    
+  </picture>
 
-    <li>
-      <h3>
-        
-          <a class="post-title" href="/blog/2026/thoughts-on-robotics-ecosystems/">Robotics Ecosystems, from Shenzhen to SF</a>
-        
-      </h3>
-      <p class="post-meta">February 1, 2026</p>
-    </li>
+</figure>
 
-    
-
-    <li>
-      <h3>
-        
-          <a class="post-title" href="/blog/2026/what-just-happened/">What just happened?! Quick thoughts on Gastown, Clawdbot, Moltbook</a>
-        
-      </h3>
-      <p class="post-meta">January 30, 2026</p>
-    </li>
-
-    
-
-    <li>
-      <h3>
-        
-          <a class="post-title" href="/blog/2026/moving-to-san-francisco/">Moving to San Francisco</a>
-        
-      </h3>
-      <p class="post-meta">January 1, 2026</p>
-    </li>
-
-    
-
-    <li>
-      <h3>
-        
-        <a class="post-title" href="https://web.archive.org/web/20210304003050/https://zoey4ai.com/" target="_blank" rel="noopener noreferrer">Understanding Deep Learning for Object Detection</a>
-        
-      </h3>
-      <p class="post-meta">June 4, 2018</p>
-    </li>
-
-    
-  </ul>
-
+    </div>
 </div>
+<div class="caption">
+    System overview
+</div>
+
+<p>Check out our <a href="https://openaccess.thecvf.com/content_ICCV_2017_workshops/papers/w1/Chen_Virtual_Blood_Vessels_ICCV_2017_paper.pdf" target="_blank" rel="noopener noreferrer">paper</a></p>
+
+          </article>
+
+        </div>
 
     </main>
 

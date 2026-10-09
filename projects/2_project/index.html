@@ -11,23 +11,23 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Zoey  Chen | blog</title>
+    <title>Zoey  Chen | Residual RL</title>
     <meta name="author" content="Zoey  Chen" />
-    <meta name="description" content="Zoey Chen works on robotics, machine learning, and simulation for real-world robot learning. Research, publications, and personal writing." />
+    <meta name="description" content="Can a better action representation help an RL policy learn from fewer samples?" />
 
     <!-- OpenGraph -->
     <meta property="og:site_name" content="Zoey  Chen" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Zoey  Chen | blog" />
-    <meta property="og:url" content="https://qiuyuchen14.github.io/blog/" />
-    <meta property="og:description" content="Zoey Chen works on robotics, machine learning, and simulation for real-world robot learning. Research, publications, and personal writing." />
+    <meta property="og:title" content="Zoey  Chen | Residual RL" />
+    <meta property="og:url" content="https://qiuyuchen14.github.io/projects/2_project/" />
+    <meta property="og:description" content="Can a better action representation help an RL policy learn from fewer samples?" />
     
     <meta property="og:locale" content="en" />
 
     <!-- Twitter card -->
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Zoey  Chen | blog" />
-    <meta name="twitter:description" content="Zoey Chen works on robotics, machine learning, and simulation for real-world robot learning. Research, publications, and personal writing." />
+    <meta name="twitter:title" content="Zoey  Chen | Residual RL" />
+    <meta name="twitter:description" content="Can a better action representation help an RL policy learn from fewer samples?" />
     
     <meta name="twitter:site" content="@ZoeyC17" />
     <meta name="twitter:creator" content="@ZoeyC17" />
@@ -52,7 +52,7 @@
     <link rel="shortcut icon" href="/assets/img/zoey.jpg"/>
     
     <link rel="stylesheet" href="/assets/css/main.css?v=1791525306">
-    <link rel="canonical" href="https://qiuyuchen14.github.io/blog/">
+    <link rel="canonical" href="https://qiuyuchen14.github.io/projects/2_project/">
     
     <!-- Dark Mode -->
     
@@ -73,7 +73,7 @@
   <div class="container bar-content">
     <a class="site-name" href="/">Zoey Chen</a>
     <nav class="section-nav" aria-label="Main navigation">
-      <a href="/#writing" aria-current="page">Writing</a>
+      <a href="/#writing">Writing</a>
       <a href="/#research">Research</a>
       <a href="/publications/">Publications</a>
       <a href="/#talks">Talks</a>
@@ -91,74 +91,156 @@
 
     <!-- Content -->
     <main id="main" class="container site-content" tabindex="-1">
-      <div class="post">
+      <!-- page.html -->
+        <div class="post">
 
-  <div class="header-bar">
-    <h1>Sunday Notes</h1>
-    <h2>Thoughts on robots and life, usually written on Sundays</h2>
-  </div>
+          <header class="post-header">
+            <h1 class="post-title">Residual RL</h1>
+            <p class="post-description">Can a better action representation help an RL policy learn from fewer samples?</p>
+          </header>
 
+          <article>
+            <p>This is a <a href="https://homes.cs.washington.edu/~bboots/RL-Fall2020/" target="_blank" rel="noopener noreferrer">RL class</a> project with Xiangyun Meng and <a href="https://mohitshridhar.com/" target="_blank" rel="noopener noreferrer">Mohit Shridhar</a>.</p>
 
-  <ul class="post-list">
-    
+<p>We explored whether residual reinforcement learning could refine human demonstrations in simulation. Reducing the action space with principal component analysis (PCA) preserved useful behavior from the demonstrations while helping the policy learn smoother trajectory refinements from fewer samples.</p>
 
-    <li>
-      <h3>
-        
-          <a class="post-title" href="/blog/2026/from-world-models-to-the-landscapes-of-robotics-research/">From World Models to the Landscapes of Robotics Research</a>
-        
-      </h3>
-      <p class="post-meta">February 16, 2026</p>
-    </li>
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
 
-    
+  <picture>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/residual_RL/data2.gif" title="example image">
 
-    <li>
-      <h3>
-        
-          <a class="post-title" href="/blog/2026/thoughts-on-robotics-ecosystems/">Robotics Ecosystems, from Shenzhen to SF</a>
-        
-      </h3>
-      <p class="post-meta">February 1, 2026</p>
-    </li>
+  </picture>
 
-    
+</figure>
 
-    <li>
-      <h3>
-        
-          <a class="post-title" href="/blog/2026/what-just-happened/">What just happened?! Quick thoughts on Gastown, Clawdbot, Moltbook</a>
-        
-      </h3>
-      <p class="post-meta">January 30, 2026</p>
-    </li>
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
 
-    
+  <picture>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/residual_RL/data3.gif" title="example image">
 
-    <li>
-      <h3>
-        
-          <a class="post-title" href="/blog/2026/moving-to-san-francisco/">Moving to San Francisco</a>
-        
-      </h3>
-      <p class="post-meta">January 1, 2026</p>
-    </li>
+  </picture>
 
-    
+</figure>
 
-    <li>
-      <h3>
-        
-        <a class="post-title" href="https://web.archive.org/web/20210304003050/https://zoey4ai.com/" target="_blank" rel="noopener noreferrer">Understanding Deep Learning for Object Detection</a>
-        
-      </h3>
-      <p class="post-meta">June 4, 2018</p>
-    </li>
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
 
-    
-  </ul>
+  <picture>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/residual_RL/data36.gif" title="example image">
 
+  </picture>
+
+</figure>
+
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/residual_RL/data64.gif" title="example image">
+
+  </picture>
+
+</figure>
+
+    </div>
 </div>
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/residual_RL/data93.gif" title="example image">
+
+  </picture>
+
+</figure>
+
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/residual_RL/data198.gif" title="example image">
+
+  </picture>
+
+</figure>
+
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/residual_RL/data231.gif" title="example image">
+
+  </picture>
+
+</figure>
+
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/residual_RL/data46.gif" title="example image">
+
+  </picture>
+
+</figure>
+
+    </div>
+</div>
+
+<div class="caption">
+    Grasping trajectories refined with residual RL succeeded where replaying human demonstrations failed because of tracking and inverse kinematics errors.
+</div>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/residual_RL/comparison_pca.png" title="example image">
+
+  </picture>
+
+</figure>
+
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/residual_RL/qualatative.png" title="example image">
+
+  </picture>
+
+</figure>
+
+    </div>
+</div>
+
+          </article>
+
+        </div>
 
     </main>
 

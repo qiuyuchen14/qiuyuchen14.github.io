@@ -11,23 +11,23 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Zoey  Chen | blog</title>
+    <title>Zoey  Chen | Implicit Shape Augmentation</title>
     <meta name="author" content="Zoey  Chen" />
-    <meta name="description" content="Zoey Chen works on robotics, machine learning, and simulation for real-world robot learning. Research, publications, and personal writing." />
+    <meta name="description" content="Generate novel shapes and ways to grasp them given minimal human demonstrations." />
 
     <!-- OpenGraph -->
     <meta property="og:site_name" content="Zoey  Chen" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Zoey  Chen | blog" />
-    <meta property="og:url" content="https://qiuyuchen14.github.io/blog/" />
-    <meta property="og:description" content="Zoey Chen works on robotics, machine learning, and simulation for real-world robot learning. Research, publications, and personal writing." />
+    <meta property="og:title" content="Zoey  Chen | Implicit Shape Augmentation" />
+    <meta property="og:url" content="https://qiuyuchen14.github.io/projects/5_project/" />
+    <meta property="og:description" content="Generate novel shapes and ways to grasp them given minimal human demonstrations." />
     
     <meta property="og:locale" content="en" />
 
     <!-- Twitter card -->
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Zoey  Chen | blog" />
-    <meta name="twitter:description" content="Zoey Chen works on robotics, machine learning, and simulation for real-world robot learning. Research, publications, and personal writing." />
+    <meta name="twitter:title" content="Zoey  Chen | Implicit Shape Augmentation" />
+    <meta name="twitter:description" content="Generate novel shapes and ways to grasp them given minimal human demonstrations." />
     
     <meta name="twitter:site" content="@ZoeyC17" />
     <meta name="twitter:creator" content="@ZoeyC17" />
@@ -52,7 +52,7 @@
     <link rel="shortcut icon" href="/assets/img/zoey.jpg"/>
     
     <link rel="stylesheet" href="/assets/css/main.css?v=1791525306">
-    <link rel="canonical" href="https://qiuyuchen14.github.io/blog/">
+    <link rel="canonical" href="https://qiuyuchen14.github.io/projects/5_project/">
     
     <!-- Dark Mode -->
     
@@ -73,7 +73,7 @@
   <div class="container bar-content">
     <a class="site-name" href="/">Zoey Chen</a>
     <nav class="section-nav" aria-label="Main navigation">
-      <a href="/#writing" aria-current="page">Writing</a>
+      <a href="/#writing">Writing</a>
       <a href="/#research">Research</a>
       <a href="/publications/">Publications</a>
       <a href="/#talks">Talks</a>
@@ -91,74 +91,60 @@
 
     <!-- Content -->
     <main id="main" class="container site-content" tabindex="-1">
-      <div class="post">
+      <!-- page.html -->
+        <div class="post">
 
-  <div class="header-bar">
-    <h1>Sunday Notes</h1>
-    <h2>Thoughts on robots and life, usually written on Sundays</h2>
-  </div>
+          <header class="post-header">
+            <h1 class="post-title">Implicit Shape Augmentation</h1>
+            <p class="post-description">Generate novel shapes and ways to grasp them given minimal human demonstrations.</p>
+          </header>
 
+          <article>
+            <p>Dexterous robotic hands have the capability to interact with a wide variety of household objects to perform tasks like grasping. However, learning robust real world grasping policies for arbitrary objects has proven challenging due to the difficulty of generating high quality training data. In this work, we propose a learning system (ISAGrasp) for leveraging a small number of human demonstrations to bootstrap the generation of a much larger dataset containing successful grasps on a variety of novel objects. Our key insight is to use a correspondence-aware implicit generative model to deform object meshes and demonstrated human grasps in order to generate a diverse dataset of novel objects and successful grasps for supervised learning, while maintaining semantic realism. We use this dataset to train a robust grasping policy in simulation which can be deployed in the real world. We demonstrate grasping performance with a four-fingered Allegro hand in both simulation and the real world, and show this method can handle entirely new semantic classes and achieve a 79% success rate on grasping unseen objects in the real world. 
+Check out our <a href="https://sites.google.com/view/implicitaugmentation/home" target="_blank" rel="noopener noreferrer">website</a></p>
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
 
-  <ul class="post-list">
-    
+  <picture>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/isagrasp.png" title="example image">
 
-    <li>
-      <h3>
-        
-          <a class="post-title" href="/blog/2026/from-world-models-to-the-landscapes-of-robotics-research/">From World Models to the Landscapes of Robotics Research</a>
-        
-      </h3>
-      <p class="post-meta">February 16, 2026</p>
-    </li>
+  </picture>
 
-    
+</figure>
 
-    <li>
-      <h3>
-        
-          <a class="post-title" href="/blog/2026/thoughts-on-robotics-ecosystems/">Robotics Ecosystems, from Shenzhen to SF</a>
-        
-      </h3>
-      <p class="post-meta">February 1, 2026</p>
-    </li>
-
-    
-
-    <li>
-      <h3>
-        
-          <a class="post-title" href="/blog/2026/what-just-happened/">What just happened?! Quick thoughts on Gastown, Clawdbot, Moltbook</a>
-        
-      </h3>
-      <p class="post-meta">January 30, 2026</p>
-    </li>
-
-    
-
-    <li>
-      <h3>
-        
-          <a class="post-title" href="/blog/2026/moving-to-san-francisco/">Moving to San Francisco</a>
-        
-      </h3>
-      <p class="post-meta">January 1, 2026</p>
-    </li>
-
-    
-
-    <li>
-      <h3>
-        
-        <a class="post-title" href="https://web.archive.org/web/20210304003050/https://zoey4ai.com/" target="_blank" rel="noopener noreferrer">Understanding Deep Learning for Object Detection</a>
-        
-      </h3>
-      <p class="post-meta">June 4, 2018</p>
-    </li>
-
-    
-  </ul>
-
+    </div>
 </div>
+<div class="caption">
+    An illustration of the training scheme in ISAGrasp. A few human demonstrations are provided from
+motion capture. These demonstrations are retargeted to a four-fingered allegro robot in simulation. We use a
+correspondence-aware generative model to extrapolate the retargeted demonstrations to a large dataset of novel
+objects. We use this dataset to train a single grasping policy that is able to generalize to a variety of unseen
+objects in simulation and real world.
+</div>
+
+<div style="text-align: center;">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/isagrasp.gif" title="example image">
+
+  </picture>
+
+</figure>
+
+    </div>
+</div>
+<div class="caption">
+    ISAGrasp significantly improves the generalization ability to unseen objects. We evaluated our policy on 22 unseen objects in real world and achieve 79% success rate.
+</div>
+
+          </article>
+
+        </div>
 
     </main>
 
