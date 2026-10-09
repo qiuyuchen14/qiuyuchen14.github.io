@@ -1,6 +1,6 @@
 ---
 layout: page
-title: projects
+title: Projects
 permalink: /projects/
 description: Selected research and earlier explorations in robotics and computer vision.
 nav: true

@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Medical Images Analysis
-description: Reconstruction of blood vessels from stereo x-ray images
+title: Medical Image Analysis
+description: Reconstruction of blood vessels from stereo X-ray images.
 img: assets/img/medical_img/demonstration.png
 importance: 3
 category: work

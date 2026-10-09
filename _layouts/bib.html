@@ -115,6 +115,9 @@
           <p class="research-summary">{{ entry.summary }}</p>
           {% endif %}
           <div class="links">
+          {%- if entry.proceedings %}
+            <a href="{{ entry.proceedings }}" class="btn btn-sm z-depth-0" role="button">Proceedings</a>
+          {%- endif %}
           {%- if entry.paper %}
             {% if entry.paper contains '://' -%}
             <a href="{{ entry.paper }}" class="btn btn-sm z-depth-0" role="button">Paper</a>

@@ -1,15 +1,14 @@
 ---
 layout: page
-title: Residual RL 
-description: Can we train a more sample efficient RL policy using a better action representation?
+title: Residual RL
+description: Can a better action representation help an RL policy learn from fewer samples?
 img: assets/img/residual_RL/data2.gif
 importance: 2
 category: work
 ---
 This is a [RL class](https://homes.cs.washington.edu/~bboots/RL-Fall2020/) project with Xiangyun Meng and [Mohit Shridhar](https://mohitshridhar.com/).
 
-In this work, we explored if we can improve human demonstrations in simulation using residual reinforcement learning. Our key insight is that by reducing action space via PCA, we can dramatically 
-reduce the high sampling complexity, while preserving behavior features from the demonstrations, which leads to a more sample efficient and smooth trajectory refinement. 
+We explored whether residual reinforcement learning could refine human demonstrations in simulation. Reducing the action space with principal component analysis (PCA) preserved useful behavior from the demonstrations while helping the policy learn smoother trajectory refinements from fewer samples.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -41,7 +40,7 @@ reduce the high sampling complexity, while preserving behavior features from the
 </div>
 
 <div class="caption">
-    Successful refined grasping trajectories by residual RL, while replaying human demonstrations would fail due to tracking error and IK error. 
+    Grasping trajectories refined with residual RL succeeded where replaying human demonstrations failed because of tracking and inverse kinematics errors.
 </div>
 
 <div class="row">
